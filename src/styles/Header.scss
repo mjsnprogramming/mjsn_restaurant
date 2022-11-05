@@ -1,0 +1,92 @@
+@mixin spans() {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    position: absolute;
+    user-select: none;
+}
+@mixin links() {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+* {
+    box-sizing: border-box;
+}
+#mjsnFoodHeader {
+    width: 100%;
+    height: 97px;
+    background-color: #FFFBF3;
+    display: flex;
+}
+#mjsnFood {
+    width: 307px;
+    height: 46px;
+    display: flex;
+    position: absolute;
+    top: 29px;
+    left: 9.24%;
+    span:nth-child(1) {
+        @include spans;
+        color: #3C3C3C;
+        left: 0;
+    }
+    span:nth-child(2) {
+        @include spans;
+        color: #FCC647;
+        left: 100px;
+    }
+}
+#headerLinks {
+    height: 23px;
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    li {
+        @include links;
+        display: inline-flex;
+        flex-flow: row wrap;
+        list-style-type: none;
+    }
+}
+.links {
+    @include links;
+    text-decoration: none;
+    margin-right: 80px;
+}
+#nav {
+    width: 35px;
+    height: 40px;
+    position: absolute;
+    left: 95%;
+    top: 28px;
+    cursor: pointer;
+    .navLinks {
+        width: 35px;
+        height: 5px;
+        background-color: #FCC647;
+    }
+    #navLink1 {
+        position: absolute;
+        top: 5px;
+    }
+    #navLink2 {
+        position: absolute;
+        top: 15px;
+    }
+    #navLink3 {
+        position: absolute;
+        top: 25px;
+    }
+}
+@media screen and (max-width: 1367px) {
+    #headerLinks {
+        left: 35%;
+        .links {
+            margin-right: 40px;
+            font-size: 17px;
+        }
+    }
+}
