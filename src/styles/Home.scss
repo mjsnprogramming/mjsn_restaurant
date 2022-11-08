@@ -57,6 +57,146 @@ $inter: 'Inter', sans-serif;
         line-height: 50px;
     }
 }
+#getStartedButton {
+    width: 140px;
+    height: 50px;
+    background-color: #FCC647;
+    border-radius: 16px;
+    border: transparent;
+    position: absolute;
+    left: 9.24%;
+    top: 440px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#watchVideo {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: transparent;
+    border-radius: 360px;
+    position: absolute;
+    left: 50px;
+    top: 443px;
+}
 #rightMain {
     @include main;
 }
+#howItWorks {
+    width: 100%;
+    height: 800px;
+    margin-top: 800px;
+    display: flex;
+    position: absolute;
+    span:nth-child(1) {
+        font-family: $inter;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        color: #3C3C3C;;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    p:nth-child(2) {
+        font-family: $roboto;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 40px;
+        position: absolute;
+        top: 160px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #667085;
+        text-align: center;
+    }
+}
+.howItWorks {
+    width: 33.3%;
+    height: 400px;
+    margin-top: 300px;
+    float: left;
+    span {
+        position: relative;
+        display: flex;
+        top: 60px;
+        text-align: center;
+        justify-content: center;
+        font-size: 24px;
+        font-family: $inter;
+        font-weight: 700;
+    }
+    p {
+        position: relative;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        top: 80px;
+        font-size: 20px;
+        padding: 20px;
+        color: #667085;
+    }
+}
+.howItWorksCircles {
+    width: 90px;
+    height: 90px;
+    border: transparent;
+    border-radius: 360px;
+    position: relative;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#orderNowCircle {
+    background-color: #1a38e2;
+}
+#getDeliveryCircle {
+    background-color: #FCC647;
+}
+#paymentCircle {
+    background-color: #30aa3a;
+}
+#menu {
+    margin-top: 1600px;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    span:nth-child(1) {
+        position: relative;
+        display: block;
+        text-align: center;
+        top: 0;
+        font-family: "Segoe UI", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        color: #3C3C3C;
+    }
+    p:nth-child(2) {
+        position: relative;
+        display: block;
+        font-family: $inter;
+        font-size: 14px;
+        line-height: 27px;
+        text-align: center;
+        top: 58px;
+        color: #667085;
+
+    }
+}
+.menuItems {
+    width: 273px;
+    height: 319px;
+    margin: 25px;
+    border: 1px solid rgba(112, 112, 112, 0.2);
+    float: left;
+    display: block;
+    img {
+        width: 161.85px;
+        height: 152.77px;
+    }
+}
+
