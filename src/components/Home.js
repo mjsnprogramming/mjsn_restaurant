@@ -1,8 +1,10 @@
-import  ReactDOM  from 'react-dom';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core';
 import { faCirclePlay } from '@fortawesome/free-regular-svg-icons';
-import { faDollarSign, faTruckFast } from '@fortawesome/free-solid-svg-icons';
+import { faDollarSign, faTruckFast, faScroll, faCarrot, faLemon, faPepperHot,
+     faAppleWhole, faLeaf, faPizzaSlice, faCartPlus, faShareNodes, faArrowLeft,
+      faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faGooglePlay } from '@fortawesome/free-brands-svg-icons'; 
 import Header from './Headers/HeaderMain.js';
 import '../styles/Home.scss';
 import React from 'react';
@@ -11,6 +13,7 @@ import spaghetti from '../images/spaghetti.png';
 import pizza from '../images/pizza.png';
 import dish from '../images/dish.png';
 import fries from '../images/fries.png';
+import { faApple } from '@fortawesome/free-brands-svg-icons';
 function Home() {
     return (
         <div className = "Home">
@@ -34,7 +37,12 @@ function Home() {
                     </div>
                 </div>
                 <div id = "rightMain">
-                
+                    <FontAwesomeIcon icon = {faCarrot}/>
+                    <FontAwesomeIcon icon = {faLemon}/>
+                    <FontAwesomeIcon icon = {faPepperHot}/>
+                    <FontAwesomeIcon icon = {faAppleWhole}/>
+                    <FontAwesomeIcon icon = {faLeaf}/>
+                    <FontAwesomeIcon icon = {faPizzaSlice}/>
                 </div>
                 </div>
                 <div id = "howItWorks">
@@ -43,6 +51,7 @@ function Home() {
                     Lorem Ipsum has been the industry</p>
                     <div id = "orderNow" className = "howItWorks">
                         <div id = "orderNowCircle" className = "howItWorksCircles">
+                            <FontAwesomeIcon icon = {faScroll} font-size = "40px" color = "white" id = "faScroll"/>
                         </div>
                             <span>Order Now</span>
                             <p>Lorem Ipsum is a simply dummy text of the<br></br>
@@ -77,8 +86,12 @@ function Home() {
                         <p>Lorem Ipsum is simply dummy text of<br></br>
                         the printing and typersetting...</p>
                         <span>$7.10</span>
-                        <button className = "addToCart"></button>
-                        <button className = "shareDish"></button>
+                        <button className = "addToCart">
+                            <FontAwesomeIcon icon = {faCartPlus}/>
+                        </button>
+                        <button className = "shareDish">
+                            <FontAwesomeIcon icon = {faShareNodes}/>
+                        </button>
                     </div>
                     <div className = "menuItems">
                         <img src = {fries}></img>
@@ -87,8 +100,12 @@ function Home() {
                         <p>Lorem Ipsum is simply dummy text of<br></br>
                         the printing and typersetting...</p>
                         <span>$7.10</span>
-                        <button className = "addToCart"></button>
-                        <button className = "shareDish"></button>
+                        <button className = "addToCart">
+                        <FontAwesomeIcon icon = {faCartPlus}/>
+                        </button>
+                        <button className = "shareDish">
+                        <FontAwesomeIcon icon = {faShareNodes}/>
+                        </button>
                     </div>
                     <div className = "menuItems">
                         <img src = {pizza}></img>
@@ -97,8 +114,12 @@ function Home() {
                         <p>Lorem Ipsum is simply dummy text of<br></br>
                         the printing and typersetting...</p>
                         <span>$7.10</span>
-                        <button className = "addToCart"></button>
-                        <button className = "shareDish"></button>
+                        <button className = "addToCart">
+                        <FontAwesomeIcon icon = {faCartPlus}/>
+                        </button>
+                        <button className = "shareDish">
+                        <FontAwesomeIcon icon = {faShareNodes}/>
+                        </button>
                     </div>
                     <div className = "menuItems">
                         <img src = {dish}></img>
@@ -107,8 +128,12 @@ function Home() {
                         <p>Lorem Ipsum is simply dummy text of<br></br>
                         the printing and typersetting...</p>
                         <span>$7.10</span>
-                        <button className = "addToCart"></button>
-                        <button className = "shareDish"></button>
+                        <button className = "addToCart">
+                        <FontAwesomeIcon icon = {faCartPlus}/>
+                        </button>
+                        <button className = "shareDish">
+                        <FontAwesomeIcon icon = {faShareNodes}/>
+                        </button>
                     </div>
                     <div className = "menuItems">
                         <img src = {spaghetti}></img>
@@ -117,8 +142,12 @@ function Home() {
                         <p>Lorem Ipsum is simply dummy text of<br></br>
                         the printing and typersetting...</p>
                         <span>$7.10</span>
-                        <button className = "addToCart"></button>
-                        <button className = "shareDish"></button>
+                        <button className = "addToCart">
+                        <FontAwesomeIcon icon = {faCartPlus}/>
+                        </button>
+                        <button className = "shareDish">
+                        <FontAwesomeIcon icon = {faShareNodes}/>
+                        </button>
                     </div>
                     <div className = "menuItems">
                         <img src = {fish}></img>
@@ -127,8 +156,12 @@ function Home() {
                         <p>Lorem Ipsum is simply dummy text of<br></br>
                         the printing and typersetting...</p>
                         <span>$7.10</span>
-                        <button className = "addToCart"></button>
-                        <button className = "shareDish"></button>
+                        <button className = "addToCart">
+                        <FontAwesomeIcon icon = {faCartPlus}/>
+                        </button>
+                        <button className = "shareDish">
+                        <FontAwesomeIcon icon = {faShareNodes}/>
+                        </button>
                     </div>
                     <div className = "menuItems">
                         <img src = {pizza}></img>
@@ -137,8 +170,12 @@ function Home() {
                         <p>Lorem Ipsum is simply dummy text of<br></br>
                         the printing and typersetting...</p>
                         <span>$7.10</span>
-                        <button className = "addToCart"></button>
-                        <button className = "shareDish"></button>
+                        <button className = "addToCart">
+                        <FontAwesomeIcon icon = {faCartPlus}/>
+                        </button>
+                        <button className = "shareDish">
+                        <FontAwesomeIcon icon = {faShareNodes}/>
+                        </button>
                     </div>
                     <div className = "menuItems">
                         <img src = {fries}></img>
@@ -147,11 +184,44 @@ function Home() {
                         <p>Lorem Ipsum is simply dummy text of<br></br>
                         the printing and typersetting...</p>
                         <span>$7.10</span>
-                        <button className = "addToCart"></button>
-                        <button className = "shareDish"></button>
+                        <button className = "addToCart">
+                        <FontAwesomeIcon icon = {faCartPlus}/>
+                        </button>
+                        <button className = "shareDish">
+                        <FontAwesomeIcon icon = {faShareNodes}/>
+                        </button>
                     </div>
                 </div>
-            
+                <div id = "pageChooseCircles">
+                    <div id = "leftArrow" className = "pageChooseCircles">
+                        <FontAwesomeIcon icon = {faArrowLeft}/>
+                    </div>
+                    <div id = "one" className = "pageChooseCircles">1</div>
+                    <div id = "two" className = "pageChooseCircles">2</div>
+                    <div id = "three" className = "pageChooseCircles">3</div>
+                    <div id = "four" className = "pageChooseCircles">4</div>
+                    <div id = "five" className = "pageChooseCircles">5</div>
+                    <div id = "rightArrow" className = "pageChooseCircles">
+                        <FontAwesomeIcon icon = {faArrowRight}/>
+                    </div>
+                </div>
+                <div id = "downloadTheApp">
+                    <p>To Get 15% Discount<br></br>
+                    Download The App</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typersetting<br></br>
+                    industry. Lorem Ipsum has been teh industry's standard dummy text ever since 1500s.</p>
+                    <button id = "googlePlay">
+                        <FontAwesomeIcon icon = {faGooglePlay}/>
+                        <span>Download on</span>
+                        <span>Google</span>
+                        <span>play</span>
+                    </button>
+                    <button id = "googlePlay">
+                        <FontAwesomeIcon icon = {faApple}/>
+                        <span>Download on the</span>
+                        <span>App Store</span>
+                    </button>
+                </div>
         </div>
     )
 }
