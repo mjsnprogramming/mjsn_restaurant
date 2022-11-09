@@ -1,9 +1,9 @@
-import Header from './Header.js';
+import HeaderAboutUs from './Headers/HeaderAboutUs.js';
 import '../styles/AboutUs.scss';
 function AboutUs() {
     return (
         <div className = "AboutUs">
-            <Header/>    
+            <HeaderAboutUs/>    
         </div>
     )
 }

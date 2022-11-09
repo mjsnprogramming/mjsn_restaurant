@@ -1,9 +1,9 @@
-import Header from './Header.js';
+import HeaderContact from './Headers/HeaderContact.js';
 import '../styles/Contact.scss';
 function Contact() {
     return (
         <div className = "Contact">
-            <Header/>    
+            <HeaderContact/>    
             
         </div>
     )

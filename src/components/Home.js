@@ -1,7 +1,9 @@
-//import  ReactDOM  from 'react-dom';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core';
-import Header from './Header.js';
+import  ReactDOM  from 'react-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core';
+import { faCirclePlay } from '@fortawesome/free-regular-svg-icons';
+import { faDollarSign, faTruckFast } from '@fortawesome/free-solid-svg-icons';
+import Header from './Headers/HeaderMain.js';
 import '../styles/Home.scss';
 import React from 'react';
 import fish from '../images/fish.png';
@@ -23,11 +25,13 @@ function Home() {
                         industry. Lorem Ipsum has been the industry's standard dummy<br></br>
                         text ever since the 1500s.
                     </p>
+                    <div id = "getStartedButtons">
                     <button id = "getStartedButton">Get Started</button>
                     <button id = "watchVideo">
-                    
+                    <FontAwesomeIcon icon={faCirclePlay} fontSize = "25px" color = "#FCC647"/>
                     </button>
                     <span>More Information</span>
+                    </div>
                 </div>
                 <div id = "rightMain">
                 
@@ -38,21 +42,26 @@ function Home() {
                     <p>Lorem Ipsum is simply dummy text of the prinitng and typersetting industry<br></br>
                     Lorem Ipsum has been the industry</p>
                     <div id = "orderNow" className = "howItWorks">
-                        <div id = "orderNowCircle" className = "howItWorksCircles"></div>
+                        <div id = "orderNowCircle" className = "howItWorksCircles">
+                        </div>
                             <span>Order Now</span>
                             <p>Lorem Ipsum is a simply dummy text of the<br></br>
                             printing and typersetting industry. Lorem Ipsum has been the industry</p>
                         
                     </div>
                     <div id = "getDelivery" className = "howItWorks">
-                    <div id = "getDeliveryCircle" className = "howItWorksCircles"></div>
+                    <div id = "getDeliveryCircle" className = "howItWorksCircles">
+                    <FontAwesomeIcon icon={faTruckFast} font-size = "40px" color = "white" id = "faTruck"/>
+                    </div>
                             <span>Get Delivery</span>
                             <p>Lorem Ipsum is a simply dummy text of the<br></br>
                             printing and typersetting industry. Lorem Ipsum has been the industry</p>
                         
                         </div>
                         <div id = "payment" className = "howItWorks">
-                        <div id = "paymentCircle" className = "howItWorksCircles"></div>
+                        <div id = "paymentCircle" className = "howItWorksCircles">
+                            <FontAwesomeIcon icon = {faDollarSign} font-size = "40px" color = "white" id = "faDollar"/>
+                        </div>
                             <span>Payment</span>
                             <p>Lorem Ipsum is a simply dummy text of the<br></br>
                             printing and typersetting industry. Lorem Ipsum has been the industry</p>

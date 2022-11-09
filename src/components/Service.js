@@ -1,9 +1,9 @@
-import Header from './Header.js';
+import HeaderService from './Headers/HeaderService.js';
 import '../styles/Service.scss';
 function Service() {
     return (
         <div className = "Service">
-            <Header/>    
+            <HeaderService/>    
             
         </div>
     )
