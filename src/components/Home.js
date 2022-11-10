@@ -14,6 +14,8 @@ import pizza from '../images/pizza.png';
 import dish from '../images/dish.png';
 import fries from '../images/fries.png';
 import { faApple } from '@fortawesome/free-brands-svg-icons';
+import orange from '../images/orange.png';
+import mainDish from '../images/mainDish.png';
 function Home() {
     return (
         <div className = "Home">
@@ -37,12 +39,14 @@ function Home() {
                     </div>
                 </div>
                 <div id = "rightMain">
-                    <FontAwesomeIcon icon = {faCarrot}/>
-                    <FontAwesomeIcon icon = {faLemon}/>
-                    <FontAwesomeIcon icon = {faPepperHot}/>
-                    <FontAwesomeIcon icon = {faAppleWhole}/>
-                    <FontAwesomeIcon icon = {faLeaf}/>
-                    <FontAwesomeIcon icon = {faPizzaSlice}/>
+                    <FontAwesomeIcon icon = {faCarrot} id = "carrot" className = "foodIcons"/>
+                    <FontAwesomeIcon icon = {faLemon} id = "lemon" className = "foodIcons"/>
+                    <FontAwesomeIcon icon = {faPepperHot} id = "pepper" className = "foodIcons"/>
+                    <FontAwesomeIcon icon = {faAppleWhole} id = "appleWhole" className = "foodIcons"/>
+                    <FontAwesomeIcon icon = {faLeaf} id = "leaf" className = "foodIcons"/>
+                    <FontAwesomeIcon icon = {faPizzaSlice} id = "pizza" className = "foodIcons"/>
+                    <img src = {mainDish} id = "mainDish"/>
+                    <img src = {orange} id = "orangeImg"/>
                 </div>
                 </div>
                 <div id = "howItWorks">
@@ -194,15 +198,25 @@ function Home() {
                 </div>
                 <div id = "pageChooseCircles">
                     <div id = "leftArrow" className = "pageChooseCircles">
-                        <FontAwesomeIcon icon = {faArrowLeft}/>
+                        <FontAwesomeIcon icon = {faArrowLeft} id = "leftArrowIcon"/>
                     </div>
-                    <div id = "one" className = "pageChooseCircles">1</div>
-                    <div id = "two" className = "pageChooseCircles">2</div>
-                    <div id = "three" className = "pageChooseCircles">3</div>
-                    <div id = "four" className = "pageChooseCircles">4</div>
-                    <div id = "five" className = "pageChooseCircles">5</div>
+                    <div id = "one" className = "pageChooseCircles">
+                        <span>1</span>
+                    </div>
+                    <div id = "two" className = "pageChooseCircles">
+                        <span>2</span>
+                    </div>
+                    <div id = "three" className = "pageChooseCircles">
+                        <span>3</span>
+                    </div>
+                    <div id = "four" className = "pageChooseCircles">
+                        <span>4</span>
+                    </div>
+                    <div id = "five" className = "pageChooseCircles">
+                        <span>5</span>
+                    </div>
                     <div id = "rightArrow" className = "pageChooseCircles">
-                        <FontAwesomeIcon icon = {faArrowRight}/>
+                        <FontAwesomeIcon icon = {faArrowRight} id = "rightArrowIcon"/>
                     </div>
                 </div>
                 <div id = "downloadTheApp">

@@ -5,6 +5,12 @@ $inter: 'Inter', sans-serif;
     height: 700px;
     display: flex;
 }
+@mixin arrowIcons() {
+    font-size: 36px;
+    position: absolute;
+    top: 16px;
+    left: 18px;
+}
 * {
     box-sizing: border-box;
 }
@@ -21,7 +27,7 @@ $inter: 'Inter', sans-serif;
     text-align: center;
     height: 50px;
     position: absolute;
-    top: 50px;
+    top: 100px;
     left: 9.24%;
     color: #FCC647;
     span {
@@ -44,7 +50,7 @@ $inter: 'Inter', sans-serif;
         letter-spacing: 2px;
         position: absolute;
         left: 9.24%;
-        top: 90px;
+        top: 140px;
         color: #3C3C3C;
     }
     p:nth-child(3) {
@@ -52,7 +58,7 @@ $inter: 'Inter', sans-serif;
         font-size: 20px;
         color: #667085;
         position: absolute;
-        top: 230px;
+        top: 280px;
         left: 9.24%;
         line-height: 50px;
     }
@@ -61,7 +67,7 @@ $inter: 'Inter', sans-serif;
     width: 400px;
     height: 80px;
     position: absolute;
-    top: 450px;
+    top: 500px;
     left: 9.24%;
     #getStartedButton {
         width: 140px;
@@ -99,6 +105,55 @@ $inter: 'Inter', sans-serif;
 #rightMain {
     @include main;
 }
+.foodIcons {
+    font-size: 50px;
+    color:rgba(112, 112, 112, 0.2);
+}
+#carrot {
+    transform: rotate(-110deg);
+    position: absolute;
+    top: 40px;
+}
+#lemon {
+    position: relative;
+    left: 70px;
+}
+#appleWhole {
+    transform: rotate(-130deg);
+    position: relative;
+    left: -10px;
+    top: 70px;
+}
+#pepper {
+    transform: rotateY(180deg);
+    position: relative;
+    top: 570px;
+    left: -40px;
+}
+#leaf {
+    position: relative;
+    left: -80px;
+    top: 620px;
+}
+#pizza {
+    position: relative;
+    left: -110px;
+    top: 545px;
+}
+#mainDish {
+    width: 600px;
+    height: 600px;
+    z-index: 3;
+    position: absolute;
+    left: 60%;
+    top: 70px;
+}
+#orangeImg {
+    width: 40%;
+    height: 700px;
+    position: absolute;
+    left: 60%;
+}
 #howItWorks {
     width: 100%;
     height: 800px;
@@ -110,7 +165,7 @@ $inter: 'Inter', sans-serif;
         font-weight: 700;
         font-size: 36px;
         line-height: 48px;
-        color: #3C3C3C;;
+        color: #3C3C3C;
         position: absolute;
         top: 80px;
         left: 50%;
@@ -170,6 +225,11 @@ $inter: 'Inter', sans-serif;
 }
 #getDeliveryCircle {
     background-color: #FCC647;
+}
+#faScroll {
+    position: absolute;
+    left: 21px;
+    top: 24px;
 }
 #faTruck {
     position: absolute;
@@ -262,29 +322,81 @@ $inter: 'Inter', sans-serif;
         width: 28.1px;
         height: 28.1px;
         background-color: #F24D21;
+        color: white;
         border: transparent;
         border-radius: 4px;
         position: relative;
         left: 155px;
         top: 30px;
+        cursor: pointer;
     }
     .shareDish {
         width: 28.1px;
         height: 28.1px;
         background-color: #171717;
+        color: white;
         border: transparent;
         border-radius: 4px;
         position: relative;
         left: 165px;
         top: 30px;
+        cursor: pointer;
     }
 }
 #pageChooseCircles {
     position: relative;
     display: block;
     margin: 0 auto;
+    width: 700px;
+    height: 100px;
     top: 1900px;
 }
+.pageChooseCircles {
+    width: 70px;
+    height: 70px;
+    border-radius: 360px;
+    border: 1px solid rgba(112, 112, 112, 0.2);
+    display: inline-flex;
+    position: absolute;
+    top: 15px;
+    cursor: pointer;
+    span {
+        font-size: 36px;
+        font-family: $inter;
+        position: absolute;
+        left: 24px;
+        top: 14px;
+        color: #3C3C3C;
+    }
+}
+#leftArrow {
+    left: 20px;
+}
+#one {
+    left: 120px;
+}
+#two {
+    left: 220px;
+}
+#three {
+    left: 320px;
+}
+#four {
+    left: 420px;
+}
+#five {
+    left: 520px;
+}
+#rightArrow {
+    left: 620px;
+}
+#leftArrowIcon {
+    @include arrowIcons;
+}
+#rightArrowIcon {
+    @include arrowIcons;
+}
+ 
 #downloadTheApp {
     position: relative;
     top: 2000px;
