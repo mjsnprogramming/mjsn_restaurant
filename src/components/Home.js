@@ -16,7 +16,12 @@ import fries from '../images/fries.png';
 import { faApple } from '@fortawesome/free-brands-svg-icons';
 import orange from '../images/orange.png';
 import mainDish from '../images/mainDish.png';
+import Footer from './Footer.js';
+
+
+
 function Home() {
+    
     return (
         <div className = "Home">
             <Header/>    
@@ -236,6 +241,7 @@ function Home() {
                         <span>App Store</span>
                     </button>
                 </div>
+                <Footer/>
         </div>
     )
 }

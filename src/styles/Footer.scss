@@ -1,0 +1,186 @@
+$inter: "Inter", sans-serif;
+@mixin footerCircles() {
+        width: 100px;
+        height: 101.49px;
+        background-color: #FCC647;
+        border: transparent;
+        border-radius: 360px;
+        position: absolute;
+        top: 65.97px;
+}
+@mixin footerInfoSpan() {
+        font-family: $inter;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 38px;
+        text-transform: lowercase;
+        color: #232233;
+        position: absolute;
+        top: 100.48px;
+}
+@mixin footerCirclesIcons() {
+        font-size: 40px;
+        position: absolute;
+        top: 30.45px;
+        left: 30px;
+        color: white;
+}
+.Footer {
+    width: 100%;
+    height: 662px;
+    position: fixed;
+    bottom: 0;
+} 
+#info {
+    width: 1170px;
+    height: 233.43px;
+    border: transparent;
+    border-radius: 30px;
+    filter: drop-shadow(0px 10px 100px rgba(0, 0, 0, 0.24));
+    background-color: white;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 0;
+    z-index: 2;
+    hr {
+        width: 0;
+        height: 118.75px;
+        border: 2px solid #E6E6E6;
+        position: absolute;
+        left: 589px;
+        top: 57.85px;
+    }
+}
+#email {
+    width: 397px;
+    height: 101.49px;
+    position: absolute;
+    left: 98px;
+    top: 0;
+    #emailCircle {
+        @include footerCircles;
+        #envelope {
+            @include footerCirclesIcons;
+        }
+    }
+    span {
+        @include footerInfoSpan;
+        left: 118px;
+    }
+}
+#mobile {
+    width: 388px;
+    height: 101.49px;
+    position: absolute;
+    left: 683px;
+    top: 65.97px;
+    #mobileCircle {
+        @include footerCircles;
+        left: 0;
+        top: 0;
+        #phone {
+            @include footerCirclesIcons;
+        }
+    }
+    span {
+        @include footerInfoSpan;
+        top: 33px;
+        left: 118px;
+    }
+}
+#footerMainSection {
+    width: 100%;
+    height: 632px;
+    position: absolute;
+    top: 130px;
+    background-color: #232233;
+    z-index: 1;
+    #mjsnFood {
+        width: 199px;
+        height: 30px;
+        position: absolute;
+        top: 246.54px;
+        left: 137px;
+    }
+    p {
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        color: white;
+        position: absolute;
+        top: 288.15px;
+        left: 139px;
+    }
+}
+#socialMedia {
+    width: 276px;
+    height: 24.36px;
+    position: absolute;
+    top: 412px;
+    left: 137px;
+    .socialMedia {
+        font-size: 24px;
+        position: absolute;
+        top: 0;
+        color: white;
+        cursor: pointer;
+    }
+    .socialMediaHR {
+        width: 0;
+        height: 20.3px;
+        border: 1px solid #FFFFFF;
+        position: absolute;
+        top: -6px;
+    }
+    #facebook {
+        left: 0;
+        color: #FCC647;
+    }
+    #firstSocialMediaHR {
+        left: 54px;
+    }
+    #instagram {
+        left: 88px;
+    }
+    #secondSocialMediaHR {
+        left: 138px;
+    }
+    #twitter {
+        left: 170px;
+    }
+    #thirdSocialMediaHR {
+        left: 222px;
+    }
+    #youtube {
+        left: 252px;
+    }
+}
+#quickLink {
+    width: 141px;
+    height: 158px;
+    position: absolute;
+    top: 238.42px;
+    left: 803px;
+    span {
+        font-family: "Segoe UI", sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 38px;
+        color: #FFFFFF;
+    }
+    li {
+        list-style-type: none;
+        font-family: "Segoe UI", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        
+    }
+    :link {
+        text-decoration: none;
+    }
+    
+}
