@@ -56,11 +56,11 @@ function Footer() {
                 update and news</p>
                 <input type = "email" id = "newsletterInput" name = "newsletter" placeholder = "Your email address"></input>
                 <button id = "newsletterSubmit">
-                    <FontAwesomeIcon icon = {faCircleChevronRight}/>
+                    <FontAwesomeIcon icon = {faCircleChevronRight} id = "submitIcon"/>
                 </button>
             </div>
-            <hr></hr>
-            <span>
+            <hr id = "bottomHR"></hr>
+            <span id = "copyright">
             <FontAwesomeIcon icon = {faCopyright}/>
             Copyright 2022. MJSN Food. All Right Reserved.
             </span>

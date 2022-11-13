@@ -1,0 +1,85 @@
+$segoe: "Segoe UI", sans-serif;
+$inter: "Inter", sans-serif;
+@mixin position() {
+    position: absolute;
+    left: 134px;
+}
+@mixin label() {
+    @include position;
+    font-family: $segoe;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3C3C3C;
+}
+
+#contactHeaderImg {
+    background-image: url("../images/contact.png");
+    background-size: cover;
+    height: 201px;
+    span {
+        font-family: "Segoe UI", sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 43px;
+        color: #FFFFFF;
+        position: absolute;
+        top: 168px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+#letsTalk,
+#location {
+    width: 50%;
+    float: left;
+}
+#letsTalk {
+    width: 540px;
+    height: 770px;
+    position: absolute;
+    top: 356px;
+    span:nth-child(1) {
+        font-family: $segoe;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 74px;
+        color: #3C3C3C;
+        @include position;
+        top: 0;
+    }
+    p:nth-child(2) {
+        font-family: $segoe;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #667085;
+        @include position;
+        top: 57px;
+    }
+    label:nth-child(3) {
+        @include label;
+        top: 145px;
+    }
+    #name {
+        @include position;
+        top: 40px;
+        left: 0;
+    }
+    .nameAndEmail {
+        width: 540px;
+        height: 57px;
+        box-sizing: border-box;
+        border: 0.5px solid #667085;
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        text-indent: 15px;
+        outline: none;
+    }
+    label:nth-child(4) {
+        @include label;
+        top: 300px;
+    }
+
+}

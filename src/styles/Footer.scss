@@ -170,17 +170,98 @@ $inter: "Inter", sans-serif;
         line-height: 38px;
         color: #FFFFFF;
     }
-    li {
+    .footerLinks {
         list-style-type: none;
         font-family: "Segoe UI", sans-serif;
         font-weight: 600;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 38px;
         color: #FFFFFF;
+        margin-left: -40px;
         
     }
     :link {
         text-decoration: none;
     }
     
+}
+#newsletter {
+    width: 369px;
+    height: 190px;
+    position: absolute;
+    top: 235px;
+    left: 1276px;
+    span {
+        font-family: "Segoe UI", sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 38px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    p {
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 0;
+        top: 49px;
+    }
+    #newsletterInput {
+        width: 369px;
+        height: 50px;
+        background-color: #FFFFFF;
+        border: transparent;
+        border-radius: 4px;
+        position: absolute;
+        top: 130px;
+        left: 0;
+        outline: none;
+        text-indent: 20px;
+        ::placeholder {
+            font-family: $inter;
+            font-family: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #6C6C72;
+        }
+    }
+    #newsletterSubmit {
+        width: 52px;
+        height: 50px;
+        background-color: #FEB918;
+        border: transparent;
+        border-radius: 4px;
+        position: absolute;
+        top: 130px;
+        left: 317px;
+        cursor: pointer;
+        #submitIcon {
+            font-size: 24px;
+            color: #FFFFFF;
+        }
+    }
+}
+#bottomHR {
+    width: 80%;
+    height: 0;
+    position: absolute;
+    left: 139px;
+    top: 482px;
+    border: 1px solid #FFFFFF;
+}
+#copyright {
+    font-family: $inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 505px;
 }
