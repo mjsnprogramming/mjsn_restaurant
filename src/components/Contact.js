@@ -1,4 +1,5 @@
 import HeaderContact from './Headers/HeaderContact.js';
+import Footer from './Footer.js';
 import '../styles/Contact.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -31,7 +32,9 @@ function Contact() {
                 <button id = "contactSubmit">Submit</button>
             </div>
             <div id = "location">
-                <iframe></iframe>
+                <div id = "getLocation">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4869.020903170155!2d16.862736560598307!3d52.397424374014264!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1668423520104!5m2!1spl!2spl"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title = "poznan"></iframe>
+                </div>
                 <div id = "contactAddress" className = "contactDetails">
                     <div id = "locationIcon" className = "locationCircles">
                         <FontAwesomeIcon icon = {faLocationDot}/>
@@ -39,18 +42,19 @@ function Contact() {
                     <span>Bułgarska 17, 60-320, Poznań</span>
                 </div>
                 <div id = "contactPhone" className = "contactDetails">
-                    <div id = "phoneIcon" className = "phoneCircle">
+                    <div id = "phoneIcon" className = "locationCircles">
                         <FontAwesomeIcon icon = {faPhone}/>
                     </div>
                     <span>+8801817672626</span>
                 </div>
-                <div id = "emailAddress" className = "contactDetails">
-                    <div id = "emailIcon" className = "emailCircle">
+                <div id = "contactEmail" className = "contactDetails">
+                    <div id = "emailIcon" className = "locationCircles">
                         <FontAwesomeIcon icon = {faEnvelope}/>
                     </div>
                     <span>michal.majewski.lublin@gmail.com</span>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

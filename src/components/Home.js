@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-regular-svg-icons';
 import { faDollarSign, faTruckFast, faScroll, faCarrot, faLemon, faPepperHot,
      faAppleWhole, faLeaf, faPizzaSlice, faCartPlus, faShareNodes, faArrowLeft,
-      faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { faGooglePlay } from '@fortawesome/free-brands-svg-icons'; 
+      faArrowRight } from '@fortawesome/free-solid-svg-icons'; 
 import Header from './Headers/HeaderMain.js';
 import '../styles/Home.scss';
 import React from 'react';
@@ -17,7 +16,9 @@ import { faApple } from '@fortawesome/free-brands-svg-icons';
 import orange from '../images/orange.png';
 import mainDish from '../images/mainDish.png';
 import Footer from './Footer.js';
-
+import googlePlayIcon from '../images/GooglePlay.png';
+import phoneApp from '../images/phoneApp.png';
+import '../styles/mobileMain.scss';
 
 
 function Home() {
@@ -228,18 +229,25 @@ function Home() {
                     <p>To Get 15% Discount<br></br>
                     Download The App</p>
                     <p>Lorem Ipsum is simply dummy text of the printing and typersetting<br></br>
-                    industry. Lorem Ipsum has been teh industry's standard dummy text ever since 1500s.</p>
-                    <button id = "googlePlay">
-                        <FontAwesomeIcon icon = {faGooglePlay}/>
+                    industry. Lorem Ipsum has been teh industry's standard dummy<br></br> text ever since 1500s.</p>
+                    <div id = "stores">
+                    <button id = "googlePlay" className = "stores">
+                        <img src =  {googlePlayIcon} id = "googlePlayIcon"></img>
                         <span>Download on</span>
                         <span>Google</span>
                         <span>play</span>
                     </button>
-                    <button id = "googlePlay">
-                        <FontAwesomeIcon icon = {faApple}/>
+                    <button id = "appStore" className = "stores">
+                        <FontAwesomeIcon icon = {faApple} id = "appStoreIcon"/>
                         <span>Download on the</span>
                         <span>App Store</span>
                     </button>
+                    </div>
+                    <div id = "mobileApp">
+                        <div id = "phoneAroundCircle"></div>
+                        <img src = {phoneApp}></img>
+                    </div>
+
                 </div>
                 <Footer/>
         </div>

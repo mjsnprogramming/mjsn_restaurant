@@ -2,8 +2,8 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './Home.js';
 import AboutUs from './AboutUs.js';
-import Service from './Service.js';
-import Products from './Products';
+import Menu from './Menu.js';
+import Blog from './Blog';
 import Contact from './Contact';
 
 
@@ -13,8 +13,8 @@ const Routing = () => {
         <Routes>
             <Route exact path = '/' element = {<Home/>}></Route>
             <Route exact path = '/AboutUs' element = {<AboutUs/>}></Route>
-            <Route exact path = '/Service' element = {<Service/>}></Route>
-            <Route exact path = '/Products' element = {<Products/>}></Route>
+            <Route exact path = '/Menu' element = {<Menu/>}></Route>
+            <Route exact path = '/Blog' element = {<Blog/>}></Route>
             <Route exact path = '/Contact' element = {<Contact/>}></Route>
         </Routes>
     )

@@ -20,6 +20,7 @@ $inter: 'Inter', sans-serif;
     position: absolute;
     top: 97px;
     background-color: #FFFBF3;
+    overflow-x: hidden;
 }
 #fastDelivery {
     background-color: #faeaca;
@@ -158,7 +159,6 @@ $inter: 'Inter', sans-serif;
     width: 100%;
     height: 800px;
     margin-top: 800px;
-    display: flex;
     position: absolute;
     span:nth-child(1) {
         font-family: $inter;
@@ -249,6 +249,7 @@ $inter: 'Inter', sans-serif;
     width: 80%;
     height: 800px;
     position: relative;
+    display: block;
     margin: 0 auto;
     span:nth-child(1) {
         position: relative;
@@ -399,6 +400,221 @@ $inter: 'Inter', sans-serif;
  
 #downloadTheApp {
     position: relative;
-    top: 2000px;
+    top: 2150px;
+    width: 100%;
+    height: 700px;
+    p:nth-child(1) {
+        font-family: $inter;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        position: absolute;
+        left: 10%;
+        top: 20px;
+        color: #3C3C3C;
+    }
+    p:nth-child(2) {
+        font-family: $roboto;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        position: absolute;
+        left: 10%;
+        top: 170px;
+        color: #667085;
+    }
+    .stores {
+        width: 200px;
+        height: 70px;
+        background-color: #000000;
+        border: transparent;
+        border-radius: 10px;
+        color: #FFFFFF;
+    }
+    #stores {
+        position: absolute;
+        left: 10%;
+        top: 330px;
+    }
+    #googlePlay {
+        position: absolute;
+        left: 0;
+        cursor: pointer;
+        span:nth-child(2) {
+            font-size: 10px;
+            position: absolute;
+            top: 14px;
+            left: 60px;
+        }
+        span:nth-child(3) {
+            position: absolute;
+            font-size: 25px;
+            left: 58px;
+            top: 25px;
+            font-family: sans-serif;
+        }
+        span:nth-child(4) {
+            position: absolute;
+            left: 146px;
+            top: 28px;
+            font-size: 20px;
+        }
+    }
+    #appStore {
+        position: absolute;
+        left: 250px;
+        cursor: pointer;
+        span:nth-child(2) {
+            font-size: 10px;
+            position: absolute;
+            top: 14px;
+            left: 60px;
+        }
+        span:nth-child(3) {
+            font-size: 25px;
+            position: absolute;
+            top: 30px;
+            left: 60px;
+        }
+    }
+    #googlePlayIcon {
+        width: 60px;
+        height: 40px;
+        position: absolute;
+        left: 2px;
+        top: 15px;
+    }
+    #appStoreIcon {
+        position: absolute;
+        left: 10px;
+        top: 8px;
+        font-size: 50px;
+    }
 }
-
+#mobileApp {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 55%;
+    border: transparent;
+    border-radius: 360px;
+    background-color: #FCC647;
+    img {
+        position: absolute;
+        top: 50px;
+        left: -10px;
+        width: 620px;
+        height: 550px;
+    }
+    #phoneAroundCircle {
+        width: 550px;
+        height: 550px;
+        background-color: none;
+        border: 1px solid #FFFFFF;
+        border-radius: 360px;
+        position: absolute;
+        left: 25px;
+        top: 25px;
+    }
+}
+@media only screen and (max-width: 1774px) {
+    
+    #menu {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1429px) {
+    #pageChooseCircles {
+        top: 2250px;
+    }
+    #downloadTheApp {
+        top: 2000px;
+        overflow: hidden;
+    }
+}
+@media only screen and (max-width: 1160px) {
+    #rightMain {
+        display: none;
+    }
+    #mobileApp {
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 600px;
+    }
+    #downloadTheApp {
+        height: 1500px;
+    }
+}
+@media only screen and (max-width: 1076px) {
+    #pageChooseCircles {
+        top: 2650px;
+    }
+    #downloadTheApp {
+        top: 2750px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    #menu {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 723px) {
+    #pageChooseCircles {
+        width: 90%;
+        height: 50px;
+        top: 4150px;
+    }
+    .pageChooseCircles {
+        width: 50px;
+        height: 50px;
+        top: 0;
+        span {
+            font-size: 28px;
+            top: 10px;
+            left: 17px;
+        }
+    }
+    #leftArrowIcon,
+    #rightArrowIcon {
+        font-size: 30px;
+        top: 10px;
+        left: 12px;
+    }
+    #leftArrow {
+        left: 0;
+    }
+    #one {
+        left: 80px;
+    }
+    #two {
+        left: 160px;
+    }
+    #three {
+        left: 240px;
+    }
+    #four {
+        left: 320px;
+    }
+    #five {
+        left: 400px;
+    }
+    #rightArrow {
+        left: 480px;
+    }
+    #downloadTheApp {
+        top: 4200px;
+    }
+    
+}
+@media only screen and (max-width: 638px) {
+    #leftMain {
+        p:nth-child(3) {
+            top: 380px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    #getStartedButtons {
+        top: 560px;
+    }
+}

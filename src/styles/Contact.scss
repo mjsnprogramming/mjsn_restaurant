@@ -12,6 +12,16 @@ $inter: "Inter", sans-serif;
     line-height: 25px;
     color: #3C3C3C;
 }
+@mixin locationDetails() {
+    font-family: $segoe;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #667085;
+    position: absolute;
+    left: 62px;
+    top: 4px;
+}
 
 #contactHeaderImg {
     background-image: url("../images/contact.png");
@@ -81,5 +91,103 @@ $inter: "Inter", sans-serif;
         @include label;
         top: 300px;
     }
+    #email {
+        @include position;
+        top: 40px;
+        left: 0;
+    }
+    label:nth-child(5) {
+        @include label;
+        top: 442px;
+    }
 
+    #message {
+        @include position;
+        top: 40px;
+        left: 0;
+        width: 540px;
+        height: 158px;
+        border: 0.5px solid #667085;
+        border-radius: 10px;
+        text-indent: 20px;
+        outline: none;
+        ::placeholder {
+            margin-top: 10px;
+        }
+    }
+    #contactSubmit {
+        width: 540px;
+        height: 70px;
+        background-color: #FEB918;
+        border: transparent;
+        border-radius: 11px;
+        color: #FFFFFF;
+        @include position;
+        top: 701px;
+        cursor: pointer;
+    }
+}
+#location {
+    position: relative;
+    left: 50%;
+    top: 77px;
+    #getLocation {
+        width: 550px;
+        height: 460px;
+        background-color: #FFFBF3;
+        @include position;
+        iframe {
+            width: 493px;
+            height: 411px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 24px);
+        }
+    }
+    .contactDetails {
+        width: 420px;
+        height: 74px;
+        @include position;
+    }
+    #contactAddress {
+        top: 540px;
+        span {
+            @include locationDetails;
+        }
+    }
+    #contactPhone {
+        top: 611px;
+        span {
+            @include locationDetails;
+        }
+    }
+    #contactEmail {
+        top: 682px;
+        span {
+            @include locationDetails;
+        }
+    }
+    .locationCircles {
+        width: 42px;
+        height: 42px;
+        border: transparent;
+        border-radius: 360px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 18px;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 8px;
+    }
+    #locationIcon {
+        background-color: #1DDD9C;
+    }
+    #phoneIcon {
+        background-color: #76EAFB;
+    }
+    #emailIcon {
+        background-color: #F4C000;
+    }
+    
 }

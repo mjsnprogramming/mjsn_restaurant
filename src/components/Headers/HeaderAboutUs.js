@@ -14,8 +14,8 @@ function HeaderAboutUs() {
             <ul>
                 <li><Link to = "/" className = "links" id = "homeLink">Home</Link></li>
                 <li><Link to = "/AboutUs" className = "links" id = "aboutLinkAboutUs">About Us</Link></li>
-                <li><Link to = "/Service" className = "links" id = "serviceLink">Service</Link></li>
-                <li><Link to = "/Products" className = "links" id = "productsLink">Products</Link></li>
+                <li><Link to = "/Menu" className = "links" id = "menuLink">Menu</Link></li>
+                <li><Link to = "/Blog" className = "links" id = "blogLink">Blog</Link></li>
                 <li><Link to = "/Contact" className = "links" id = "contactLink">Contact Us</Link></li>
             </ul>
             </div>
