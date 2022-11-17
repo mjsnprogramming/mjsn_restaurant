@@ -1,0 +1,109 @@
+$segoe: "Segoe UI", sans-serif;
+$inter: "Inter", sans-serif;
+@mixin underTheImageSpans() {
+    font-family: $segoe;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #667085;
+    position: absolute;
+    top: 478px;
+}
+#headerContactImg {
+    background-image: url("../images/contact.png");
+    background-size: cover;
+    height: 201px;
+    span {
+        font-family: $segoe;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 43px;
+        color: #FFFFFF;
+        position: absolute;
+        top: 168px;
+        left: 50%;
+        transform: translate(5%, 0);
+    }
+}
+.articles {
+    width: 771px;
+    height: 764px;
+    box-sizing: border-box;
+    border: 1px solid #EEEEEE;
+    border-radius: 15px;
+    position: relative;
+    top: 24px;
+    left: 137px;
+    margin-top: 24px;
+    img:nth-child(1) {
+        width: 733px;
+        height: 447px;
+        position: absolute;
+        top: 19px;
+        left: 19px;
+    }
+    img:nth-child(2) {
+        width: 17px;
+        height: 16px;
+        position: absolute;
+        top: 480px;
+        left: 19px;
+    }
+    span:nth-child(3) {
+        @include underTheImageSpans;
+        left: 44px;
+    }
+    img:nth-child(4) {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 480px;
+        left: 155px;
+    }
+    span:nth-child(5) {
+        @include underTheImageSpans;
+        left: 177px;
+    }
+    img:nth-child(6) {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 480px;
+        left: 214px;
+    }
+    span:nth-child(7) {
+        @include underTheImageSpans;
+        left: 239px;
+    }
+    p:nth-child(8) {
+       font-family: $segoe;
+       font-weight: 600;
+       font-size: 32px;
+       line-height: 39px;
+       color: #3C3C3C;
+       position: absolute;
+       top: 522px;
+       left: 19px;
+    }
+    p:nth-child(9) {
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #667085;
+        position: absolute;
+        top: 581px;
+        left: 19px;
+    }
+    span:nth-child(10) {
+        $font-family: $inter;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F4B41B;
+        position: absolute;
+        top: 712px;
+        left: 19px;
+    }
+
+}
