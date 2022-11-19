@@ -72,10 +72,10 @@
     width: 35px;
     height: 40px;
     position: absolute;
-    left: 95%;
     top: 28px;
+    left: 90% !important;
+    display: none;
     cursor: pointer;
-    display: none !important;
     .navLinks {
         width: 35px;
         height: 5px;
@@ -94,6 +94,93 @@
         top: 25px;
     }
 }
+#navDrop {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    z-index: 3;
+    background-color:#FFFFFF;
+    overflow: hidden;
+    display: none;
+    #mjsnFoodDropped {
+        width: 307px;
+        height: 46px;
+        display: flex;
+        position: absolute;
+        top: 29px;
+        left: 9.24%;
+    span:nth-child(1) {
+        @include spans;
+        color: #3C3C3C;
+        left: 0;
+    }
+    span:nth-child(2) {
+        @include spans;
+        color: #FCC647;
+        left: 100px;
+    }
+    }
+    #headerLinksDropped {
+        height: 23px;
+        position: absolute;
+        top: 140px;
+        left: 9.24%;
+        li {
+            @include links; 
+            display: block;
+            list-style-type: none;
+            line-height: 80px;
+        }
+        #hrMainDropped {
+            width: 52px;
+            height: 0;
+            border: 2px solid #FCC647;
+            position: absolute;
+            top: 65px;
+            left: 41px;
+        }
+    }
+    #socialMedia {
+        top: 660px;
+        left: 15%;
+        .socialMedia {
+            font-size: 24px;
+            position: absolute;
+            top: 0;
+            color: #232233;
+            cursor: pointer;
+        }
+        #facebook {
+            color: #FCC647;
+        }
+    }
+}
+#navDropped {
+    width: 35px;
+    height: 40px;
+    position: absolute;
+    top: 28px;
+    left: 90% !important;
+    display: none;
+    cursor: pointer;
+    .navLinks {
+        width: 35px;
+        height: 5px;
+        background-color: #FCC647;
+    }
+    #navLink4 {
+        position: absolute;
+        top: 5px;
+    }
+    #navLink5 {
+        position: absolute;
+        top: 15px;
+    }
+    #navLink6 {
+        position: absolute;
+        top: 25px;
+    }
+}
 
 @media screen and (max-width: 1367px) {
     #headerLinks {
@@ -102,5 +189,17 @@
             margin-right: 40px;
             font-size: 17px;
         }
+        #hrMain {
+            left: 40px;
+            width: 46px;
+        }
+    }
+}
+@media screen and (max-width: 811px) {
+    #headerLinks {
+        display: none;
+    }
+    #nav {
+        display: block;
     }
 }

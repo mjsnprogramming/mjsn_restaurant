@@ -103,7 +103,7 @@ function Blog() {
             </div>
             <div id = "categories">
                 <input type = "text" id = "search" placeholder = "Search here"></input>
-                <span>Categories</span>
+                <span id = "categoriesSpan">Categories</span>
                 <button id = "burger" className = "categories">
                     <span>Burger</span>
                     <span>(7)</span>
@@ -129,7 +129,7 @@ function Blog() {
                     <span>(3)</span>
                 </button>
 
-                <span>Archive</span>
+                <span id = "archiveSpan">Archive</span>
                 <button id = "august" className = "categories">
                     <span>August 2022</span>
                     <span>(6)</span>

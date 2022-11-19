@@ -61,7 +61,7 @@ function Home() {
                     Lorem Ipsum has been the industry</p>
                     <div id = "orderNow" className = "howItWorks">
                         <div id = "orderNowCircle" className = "howItWorksCircles">
-                            <FontAwesomeIcon icon = {faScroll} font-size = "40px" color = "white" id = "faScroll"/>
+                            <FontAwesomeIcon icon = {faScroll} fontSize = "40px" color = "white" id = "faScroll"/>
                         </div>
                             <span>Order Now</span>
                             <p>Lorem Ipsum is a simply dummy text of the<br></br>
@@ -70,7 +70,7 @@ function Home() {
                     </div>
                     <div id = "getDelivery" className = "howItWorks">
                     <div id = "getDeliveryCircle" className = "howItWorksCircles">
-                    <FontAwesomeIcon icon={faTruckFast} font-size = "40px" color = "white" id = "faTruck"/>
+                    <FontAwesomeIcon icon={faTruckFast} fontSize = "40px" color = "white" id = "faTruck"/>
                     </div>
                             <span>Get Delivery</span>
                             <p>Lorem Ipsum is a simply dummy text of the<br></br>
@@ -79,7 +79,7 @@ function Home() {
                         </div>
                         <div id = "payment" className = "howItWorks">
                         <div id = "paymentCircle" className = "howItWorksCircles">
-                            <FontAwesomeIcon icon = {faDollarSign} font-size = "40px" color = "white" id = "faDollar"/>
+                            <FontAwesomeIcon icon = {faDollarSign} fontSize = "40px" color = "white" id = "faDollar"/>
                         </div>
                             <span>Payment</span>
                             <p>Lorem Ipsum is a simply dummy text of the<br></br>
