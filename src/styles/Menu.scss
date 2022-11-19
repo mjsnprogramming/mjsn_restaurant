@@ -1,0 +1,51 @@
+
+
+#menuHeaderImg {
+    background-image: url("../images/contact.png");
+    background-size: cover;
+    height: 201px;
+    span {
+        font-family: "Segoe UI", sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 43px;
+        color: #FFFFFF;
+        position: absolute;
+        top: 168px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+#menuNavbar {
+    width: 1168px;
+    height: 89px;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    position: relative;
+    top: 78px;
+    display: block;
+    margin: 0 auto;
+    li {
+        display: inline-block;
+    }
+    button {
+        position: relative;
+        top: 10px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color: #667085;
+        cursor: pointer;
+        background-color: #FFFFFF;
+        border: none;
+        margin-left: 55px;
+    }
+    button:focus {
+        background-color: #FEB918;
+        border: transparent;
+        border-radius: 5px;
+        color: #FFFFFF;
+    }
+}

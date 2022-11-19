@@ -246,7 +246,7 @@ $inter: 'Inter', sans-serif;
 }
 #menu {
     top: 1600px;
-    width: 80%;
+    width: 100%;
     height: 800px;
     position: relative;
     display: block;
@@ -276,8 +276,8 @@ $inter: 'Inter', sans-serif;
 .menuItems {
     width: 273px;
     height: 319px;
-    margin-left: 80px;
     margin-top: 70px;
+    margin-left: 5%;
     border: 1px solid rgba(112, 112, 112, 0.2);
     float: left;
     display: block;
@@ -517,12 +517,7 @@ $inter: 'Inter', sans-serif;
         top: 25px;
     }
 }
-@media only screen and (max-width: 1774px) {
-    
-    #menu {
-        width: 100%;
-    }
-}
+
 @media only screen and (max-width: 1429px) {
     #pageChooseCircles {
         top: 2250px;
@@ -562,7 +557,6 @@ $inter: 'Inter', sans-serif;
     #pageChooseCircles {
         width: 90%;
         height: 50px;
-        top: 4150px;
     }
     .pageChooseCircles {
         width: 50px;
@@ -616,5 +610,19 @@ $inter: 'Inter', sans-serif;
     }
     #getStartedButtons {
         top: 560px;
+    }
+    #menu {
+        span:nth-child(1) {
+            top: 40px !important;
+        }
+    }
+    .menuItems {
+        margin-left: 0;
+        left: 50% !important;
+    }
+}
+@media only screen and (max-width: 563px) {
+    #pageChooseCircles {
+        top: 4150px;
     }
 }
