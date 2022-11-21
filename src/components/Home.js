@@ -86,9 +86,11 @@ function Home() {
                             printing and typersetting industry. Lorem Ipsum has been the industry</p>
                         </div>
                 </div>
-                <div id = "menu">
+                    <div id = "menuSpan">
                     <span>Our Delicious Dish</span>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br></br> industry. Lorem Ipsum has been the industry</p>
+                    </div>
+                    <div id = "menu">
                     <div className = "menuItems">
                         <img src = {fish}></img>
                         
@@ -249,7 +251,7 @@ function Home() {
                     </div>
 
                 </div>
-                <Footer/>
+                
         </div>
     )
 }

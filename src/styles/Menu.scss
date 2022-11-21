@@ -1,5 +1,5 @@
-
-
+$segoe: "Segoe UI", sans-serif;
+$inter: "Inter", sans-serif;
 #menuHeaderImg {
     background-image: url("../images/contact.png");
     background-size: cover;
@@ -48,4 +48,64 @@
         border-radius: 5px;
         color: #FFFFFF;
     }
+}
+#menuHeaderSpan {
+    width: 465px;
+    height: 105px;
+    position: relative;
+    top: 196px;
+    margin: 0 auto;
+    display: block;
+    span {
+        font-family: $segoe;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        color: #3C3C3C;
+        text-align: center;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+    }
+    p {
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;
+        color: #667085;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+#menuItems {
+    width: 1192px;
+    height: 1047px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 282px;
+    .menuItems {
+        margin-left: 0;
+        margin-top: 0;
+        margin-right: 25px;
+        margin-bottom: 45px;
+    }
+}
+#pageChooseCirclesMenu {
+    top: 400px;
+    #one {
+        background-color: #FEB918;
+        span {
+        color: #FFFFFF !important;
+        }
+    }
+    .pageChooseCirclesMenu:focus {
+        background-color: #FEB918 !important;
+        span {
+            color: #FFFFFF !important;
+        }
+    }
+    
 }
