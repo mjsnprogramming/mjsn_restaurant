@@ -248,7 +248,7 @@ $inter: 'Inter', sans-serif;
     width: 465px;
     height: 105px;
     position: relative;
-    top: 1600px;
+    top: 1650px;
     display: block;
     margin: 0 auto;
     span {
@@ -557,11 +557,8 @@ $inter: 'Inter', sans-serif;
     }
 }
 @media only screen and (max-width: 1076px) {
-    #pageChooseCircles {
-        top: 2650px;
-    }
     #downloadTheApp {
-        top: 2750px;
+        top: 2050px;
     }
 }
 @media only screen and (max-width: 900px) {
@@ -583,8 +580,9 @@ $inter: 'Inter', sans-serif;
         }
     }
     #pageChooseCircles {
-        width: 90%;
+        width: 545px;
         height: 50px;
+
     }
     .pageChooseCircles {
         width: 50px;
@@ -624,7 +622,7 @@ $inter: 'Inter', sans-serif;
         left: 480px;
     }
     #downloadTheApp {
-        top: 4200px;
+        top: 2000px;
     }
     
 }
@@ -657,6 +655,43 @@ $inter: 'Inter', sans-serif;
         }
     }
     #pageChooseCircles {
-        top: 4150px;
+        width: 297px;
+        position: relative !important;
+        margin: 0 auto !important;
+        display: block !important;
     }
+    .pageChooseCircles {
+        width: 25px;
+        height: 25px;
+        span {
+            font-size: 16px;
+            top: 3.5px;
+            left: 7px;
+        }
+    }
+    #leftArrowIcon,
+    #rightArrowIcon {
+        font-size: 15px;
+        top: 4.4px;
+        left: 5px;
+    }
+    #one {
+        left: 45px;
+    }
+    #two {
+        left: 90px;
+    }
+    #three {
+        left: 135px;
+    }
+    #four {
+        left: 180px;
+    }
+    #five {
+        left: 225px;
+    }
+    #rightArrow {
+        left: 270px;
+    }
+    
 }

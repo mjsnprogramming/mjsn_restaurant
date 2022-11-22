@@ -4,7 +4,7 @@
     }
     #leftMain {
         p:nth-child(3) {
-            top: 430px;
+            top: 460px;
         } 
     }
     #getStartedButtons {
@@ -34,14 +34,19 @@
         transform: none;
         margin-top: 200px;
     }
+    #menuSpan {
+        position: relative;
+        top: 2600px;
+        width: 320px;
+        height: 200px;
+    }
     #menu {
         top: 2600px;
+        
     }
-    .menuItems {
-        margin-left: 35px;
-    }
+    
     #pageChooseCircles {
-        top: 5200px;
+        top: 2700px !important;
     }
     .pageChooseCircles {
         width: 25px;
@@ -80,7 +85,7 @@
 
 
     #downloadTheApp {
-        top: 5200px;
+        top: 2800px;
         p:nth-child(2) {
             top: 260px;
         }
