@@ -34,16 +34,128 @@ $inter: "Inter", sans-serif;
     .Footer {
         top: 2000px;
     }
+    #mjsnFood {
+        left: 10px;
+    }
+    #mobile {
+    width: 20px !important;
+    }
+    #newsletterInput {
+        width: 250px !important;
+    }
+    #newsletterSubmit {
+        left: 230px !important;
+    }
 } 
+@media only screen and (max-width: 1245px) {
+    #info {
+    width: 700px !important;
+    hr {
+        height: 80px !important;
+        left: 367px !important;
+        top: 65px !important;
+    }
+    #email {
+    #emailCircle {
+        width: 70px !important;
+        height: 70px !important;
+        top: 80px !important;
+        left: -50px !important;
+        #envelope {
+            left: 20px !important;
+            top: 20px !important;
+            font-size: 30px !important; 
+        }
+    }
+        span {
+            left: 30px !important;
+            font-size: 20px !important;
+            top: 95px !important;
+        }
+    }
+    #mobile {
+        #mobileCircle {
+            width: 70px !important;
+            height: 70px !important;
+            left: -270px !important;
+            top: 13px !important;
+            #phone {
+                font-size: 30px !important;
+                top: 21px !important;
+                left: 21px !important;
+            } 
+        }
+        span {
+            font-size: 20px !important;
+            top: 30px !important;
+            left: -190px !important;
+        }
+    }
+}
+
+}
 @media only screen and (max-width: 1160px) {
     .Footer {
     top: 1900px;
+    }
+    #footerMainSection {
+        #mjsnFood, p:nth-child(2) {
+            left: 20px !important;
+        }
+        #newsletter {
+            p {
+            left: 0 !important;
+        }
+    }
+    }
+    #socialMedia {
+        left: 20px !important;
     }
 }
 @media only screen and (max-width: 1076px) {
     .Footer {
         top: 3000px;
     }
+}
+@media only screen and (max-width: 1000px) {
+    #footerMainSection {
+        height: 880px !important;
+        #mjsnFood {
+        left: 10% !important;
+        top: 200px !important;
+        }
+        p:nth-child(2) {
+            left: 10% !important;
+            top: 250px !important;
+        }
+    }
+    #socialMedia {
+        left: 10% !important;
+    }
+    #quickLink {
+        left: 70% !important;
+        top: 200px !important;
+    }
+    #newsletter {
+        top: 535px !important;
+        position: absolute;
+        left: 55% !important;
+        transform: translate(-50%, 0) !important;
+        p:nth-child(2) {
+            top: 50px !important;
+        }
+
+    }
+    #bottomHR {
+        position: relative !important;
+        top: 800px !important;
+        left: 55% !important;
+        transform: translate(-70%, 0) !important;
+    }
+    #copyright {
+        top: 830px !important;
+    }
+
 }
 @media only screen and (max-width: 723px) {
     .Footer {
@@ -214,7 +326,7 @@ $inter: "Inter", sans-serif;
     height: 190px;
     position: absolute;
     top: 235px;
-    left: 70% !important;
+    left: 70%;
     span {
         font-family: "Segoe UI", sans-serif;
         font-weight: 700;
