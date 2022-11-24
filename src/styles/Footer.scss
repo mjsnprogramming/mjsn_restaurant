@@ -91,6 +91,17 @@ $inter: "Inter", sans-serif;
             left: -190px !important;
         }
     }
+    
+    
+}
+#newsletter {
+    width: 295px !important;
+    #newsletterInput {
+        top: 140px !important;
+    }
+    #newsletterSubmit {
+        top: 140px !important; 
+    }
 }
 
 }
@@ -161,10 +172,93 @@ $inter: "Inter", sans-serif;
     .Footer {
         top: 5000px;
     }
+    #info {
+        width: 340px !important;
+        height: 350px !important;
+        top: -50px !important;
+        hr {
+            width: 300px !important;
+            height: 0 !important;
+            left: 19px !important;
+            top: 170px !important;
+        }
+    }
+    #email {
+        left: 85px !important;
+        top: -20px !important;
+    }
+    #mobile {
+        left: 305px !important;
+        top: 220px !important;
+    }
+    #footerMainSection {
+        height: 1200px !important;
+        #mjsnFood, p:nth-child(2),
+        #socialMedia, 
+        #quickLink {
+            left: 22% !important;
+        } 
+    }
+    #footerMainSection {
+        #mjsnFood {
+            top: 230px !important;
+        }
+        p:nth-child(2) {
+            top: 270px !important;
+        }
+        #quickLink {
+            top: 500px !important;
+        }
+        #newsletter {
+            left: 50% !important;
+            top: 750px !important;
+            p:nth-child(2) {
+                top: 50px !important;
+            }
+        }
+    }
+    #bottomHR {
+        top: 1000px !important;
+    }
+    #copyright {
+        width: 90% !important;
+        top: 1050px !important;
+        text-align: center;
+    }
+    
+    
 }
 @media only screen and (max-width: 360px) {
     .Footer {
         top: 6000px;
+    }
+    #info {
+        overflow: hidden;
+        width: 320px !important;
+        hr {
+            width: 270px !important;
+            left: 23px !important;
+        }
+    }
+    #email {
+        left: 70px !important;
+    }
+    #mobile {
+        left: 290px !important;
+    }
+    #footerMainSection {
+        #mjsnFood,
+        p:nth-child(2),
+        #quickLink {
+            left: 20px !important;
+        }
+        #socialMedia {
+            
+            left: 0 !important;
+            position: relative;
+            display: block;
+            margin: 0 auto;
+        }
     }
 }
 #info {

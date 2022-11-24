@@ -54,7 +54,7 @@ function Contact() {
                     <span>michal.majewski.lublin@gmail.com</span>
                 </div>
             </div>
-            <Footer/>
+            
         </div>
     )
 }
