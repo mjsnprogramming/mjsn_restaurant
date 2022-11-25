@@ -22,7 +22,7 @@ $inter: "Inter", sans-serif;
         position: absolute;
         top: 168px;
         left: 50%;
-        transform: translate(5%, 0);
+        transform: translate(-50%, 0);
     }
 }
 .articles {
@@ -126,12 +126,15 @@ $inter: "Inter", sans-serif;
 }
 #categories {
     width: 309px;
-    height: 931px;
+    height: 812px;
     position: absolute;
     left: 68%;
     top: 365px;
 }
-
+#food {
+    width: 309px;
+    height: 500px;
+}
 #categoriesSpan {
     position: absolute;
     top: 73px;
@@ -156,6 +159,7 @@ $inter: "Inter", sans-serif;
     position: relative;
     top: 147px;
     border-bottom: 0.3px solid #667085;
+    cursor: pointer;
     span {
         font-family: $segoe;
         font-weight: 400;
@@ -174,6 +178,10 @@ $inter: "Inter", sans-serif;
         top: 6px;
     }
 }
+#pizzaCat,
+#june {
+    border-bottom: none;
+}
 #archiveSpan {
     font-family: "Mulish", sans-serif;
     font-weight: 700;
@@ -181,5 +189,56 @@ $inter: "Inter", sans-serif;
     line-height: 41px;
     color: #3C3C3C;
     position: absolute;
-    top: 507px;
+    top: 580px;
+}
+#archive {
+    width: 309px;
+    height: 312px;
+}
+@media screen and (max-width: 1367px) {
+    #categories {
+        top: 200px !important;
+        position: relative !important;
+        display: block;
+        margin: 0 auto !important;
+        left: 0;
+    }
+    .articles {
+        display: block !important;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+    }
+}
+@media screen and (max-width: 812px) {
+    .articles {
+        width: 320px;
+        height: 564px;
+        img:nth-child(1) {
+            width: 300px;
+            height: 200px;
+            left: 9.5px;
+        }
+        img:nth-child(2),
+        img:nth-child(4),
+        img:nth-child(6) {
+            top: 250px;
+        }
+        span:nth-child(3),
+        span:nth-child(5),
+        span:nth-child(7) {
+            top: 248px;
+        }
+        p:nth-child(8) {
+            top: 300px;
+            font-size: 14px;
+        }
+        p:nth-child(9) {
+            top: 350px;
+            font-size: 8px;
+        }
+        span:nth-child(10) {
+            top: 520px;
+        }
+    }
 }

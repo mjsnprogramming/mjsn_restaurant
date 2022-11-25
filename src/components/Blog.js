@@ -102,6 +102,7 @@ function Blog() {
                 <span>Continue Reading</span>
             </div>
             <div id = "categories">
+            <div id = "food">
                 <input type = "text" id = "search" placeholder = "Search here"></input>
                 <span id = "categoriesSpan">Categories</span>
                 <button id = "burger" className = "categories">
@@ -120,15 +121,16 @@ function Blog() {
                     <span>Fries</span>
                     <span>(8)</span>
                 </button>
-                <button id = "pizza" className = "categories">
-                    <span>Pizza</span>
-                    <span>(5)</span>
-                </button>
-                <button id = "sandwich" clasName = "categories">
+                <button id = "sandwich" className = "categories">
                     <span>Sandwich</span>
                     <span>(3)</span>
                 </button>
-
+                <button id = "pizzaCat" className = "categories">
+                    <span>Pizza</span>
+                    <span>(5)</span>
+                </button>
+                </div>
+                <div id = "archive">
                 <span id = "archiveSpan">Archive</span>
                 <button id = "august" className = "categories">
                     <span>August 2022</span>
@@ -142,6 +144,7 @@ function Blog() {
                     <span>June 2022</span>
                     <span>(2)</span>
                 </button>
+                </div>
             </div>
             
         </div>
