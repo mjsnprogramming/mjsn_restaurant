@@ -15,6 +15,7 @@ function AboutUs() {
             <div id = "aboutUsHeaderImg">
                 <span>About Us</span>
             </div>
+            <div id = "ceoAndAdvantages">
             <div id = "ceo">
                 <button>100%</button>
                 <span>Best Services</span>
@@ -23,6 +24,7 @@ function AboutUs() {
                     <img src = {ceo}/>
                 </div>
             </div>
+            
             <div id = "advantages">
                 <div id = "cookingIcon">
                 <FontAwesomeIcon icon= {faBowlFood} />
@@ -31,6 +33,7 @@ function AboutUs() {
                 <div id = "area" className = "advantages">Area Best</div>
                 <div id = "skilledChefs" className = "advantages">Skilled Chefs</div>
                 <div id = "stars" className = "advantages">5 Star Review</div>
+                </div>
                 </div>
                 <div id = "whyTheBest">
                     <div id = "aboutUsSpan">About Us</div>
