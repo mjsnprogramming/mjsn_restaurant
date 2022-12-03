@@ -51,12 +51,12 @@
         list-style-type: none;
     }
     #hrAbout {
-        width: 71px;
+        width: 83px;
         height: 0;
         border: 2px solid #FCC647;
         position: absolute;
         top: 35px;
-        left: 124px;
+        left: 172px;
     }   
 }
 #aboutLinkAboutUs {
@@ -101,5 +101,9 @@
             margin-right: 40px;
             font-size: 17px;
         }
+    }
+    #hrAbout {
+        left: 124px !important;
+        width: 71px !important;
     }
 }

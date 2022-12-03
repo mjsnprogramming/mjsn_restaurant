@@ -31,14 +31,11 @@ $inter: "Inter", sans-serif;
     position: relative;
 }
 @media only screen and (max-width: 1429px) {
-    .Footer {
-        top: 2000px;
-    }
     #mjsnFood {
         left: 10px;
     }
     #mobile {
-    width: 20px !important;
+    width: 450px !important;
     }
     #newsletterInput {
         width: 250px !important;
@@ -74,10 +71,12 @@ $inter: "Inter", sans-serif;
         }
     }
     #mobile {
+        width: 270px !important;
+        left: 400px;
         #mobileCircle {
             width: 70px !important;
             height: 70px !important;
-            left: -270px !important;
+            left: 0 !important;
             top: 13px !important;
             #phone {
                 font-size: 30px !important;
@@ -88,7 +87,7 @@ $inter: "Inter", sans-serif;
         span {
             font-size: 20px !important;
             top: 30px !important;
-            left: -190px !important;
+            left: 80px !important;
         }
     }
     
@@ -106,9 +105,6 @@ $inter: "Inter", sans-serif;
 
 }
 @media only screen and (max-width: 1160px) {
-    .Footer {
-    top: 1900px;
-    }
     #footerMainSection {
         #mjsnFood, p:nth-child(2) {
             left: 20px !important;
@@ -121,11 +117,6 @@ $inter: "Inter", sans-serif;
     }
     #socialMedia {
         left: 20px !important;
-    }
-}
-@media only screen and (max-width: 1076px) {
-    .Footer {
-        top: 3000px;
     }
 }
 @media only screen and (max-width: 1000px) {
@@ -169,9 +160,7 @@ $inter: "Inter", sans-serif;
 
 }
 @media only screen and (max-width: 723px) {
-    .Footer {
-        top: 5000px;
-    }
+
     #info {
         width: 340px !important;
         height: 350px !important;
@@ -184,11 +173,17 @@ $inter: "Inter", sans-serif;
         }
     }
     #email {
-        left: 85px !important;
-        top: -20px !important;
+        left: 35px !important;
+        width: 300px !important;
+        top: 40px !important;
+        background-color: #FCC647 !important;
+        #emailCircle {
+            position: absolute !important;
+            left: 70px !important;
+        }
     }
     #mobile {
-        left: 305px !important;
+        left: 35px !important;
         top: 220px !important;
     }
     #footerMainSection {
@@ -229,9 +224,6 @@ $inter: "Inter", sans-serif;
     
 }
 @media only screen and (max-width: 360px) {
-    .Footer {
-        top: 6000px;
-    }
     #info {
         overflow: hidden;
         width: 320px !important;

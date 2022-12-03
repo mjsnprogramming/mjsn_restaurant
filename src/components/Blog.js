@@ -4,6 +4,7 @@ import articleImg from '../images/articleImg.png';
 import calendar from '../images/calendar.png';
 import comment from '../images/comment.png';
 import person from '../images/person.png';
+import FooterBlog from '../components/Footers/FooterBlog.js';
 function Blog() {
     return (
         <div className = "Blog">
@@ -146,7 +147,7 @@ function Blog() {
                 </button>
                 </div>
             </div>
-            
+            <FooterBlog/>
         </div>
         
     )

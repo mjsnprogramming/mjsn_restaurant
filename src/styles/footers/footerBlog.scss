@@ -1,0 +1,9 @@
+.FooterBlog {
+    position: relative;
+    top: 300px;
+}
+@media screen and (max-width: 1500px) {
+    .FooterBlog {
+        top: 800px;
+    }
+}

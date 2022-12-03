@@ -433,6 +433,10 @@ $inter: "Inter", sans-serif;
             margin: 0 auto;
             left: 0;
             top: 50px;
+            -webkit-box-shadow: 0px 0px 24px 1px rgba(66, 68, 90, 1) !important;
+            -moz-box-shadow: 0px 0px 24px 1px rgba(66, 68, 90, 1) !important;
+            box-shadow: 0px 0px 24px 1px rgba(66, 68, 90, 1) !important;
+            
         }
     }
     #aboutUsSpan {
@@ -446,10 +450,12 @@ $inter: "Inter", sans-serif;
     #whyTheBestSpan {
         left: 0 !important;
         font-size: 28px !important;
+        
     }
     #whyTheBestParagraph {
         left: 0 !important;
         top: 150px !important;
+        
     }
     .quickAndHealthy {
         left: 0 !important;
@@ -467,14 +473,23 @@ $inter: "Inter", sans-serif;
     #ceoAndAdvantages {
         #ceo {
             width: 320px;
+            span:nth-child(3) {
+                left: 130px;
+                top: 320px;
+            }
             #orangeBackground {
-                width: 200px;
+                width: 219px;
+                height: 300px;
                 img {
                     width: 150px;
                     height: 300px;
+                    left: 30px;
                 }
             }
         }
+    }
+    #kitchenExpertsParagraph {
+        width: 320px;
     }
     #kitchenExperts {
         width: 320px;

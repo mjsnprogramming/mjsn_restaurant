@@ -8,6 +8,7 @@ import chef1 from '../images/chef1.png';
 import chef2 from '../images/chef2.png';
 import chef3 from '../images/chef3.png';
 import { faFacebookF, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import FooterAboutUs from './Footers/FooterAboutUs.js';
 function AboutUs() {
     return (
         <div className = "AboutUs">
@@ -107,9 +108,8 @@ function AboutUs() {
                         </div>
                     </div>     
                 </div> 
-        </div>
-        
+                <FooterAboutUs/>
+        </div>  
     )
 }
-
 export default AboutUs;
