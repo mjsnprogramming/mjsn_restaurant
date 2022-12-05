@@ -1,5 +1,5 @@
 import HeaderContact from './Headers/HeaderContact.js';
-import Footer from './Footer.js';
+import FooterContact from './Footers/FooterContact.js';
 import '../styles/Contact.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -54,7 +54,7 @@ function Contact() {
                     <span>michal.majewski.lublin@gmail.com</span>
                 </div>
             </div>
-            
+            <FooterContact/>
         </div>
     )
 }

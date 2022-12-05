@@ -1,0 +1,9 @@
+.FooterMain {
+    position: relative;
+    top: 2300px !important;
+}
+@media screen and (max-width: 1500px) {
+    .Footer {
+        top: 800px;
+    }
+}

@@ -4,11 +4,12 @@ import { faCircleChevronRight, faEnvelope, faPhone } from "@fortawesome/free-sol
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from 'react-router-dom';
-import '../styles/Footer.scss';
+import '../../styles/Footer.scss';
+import '../../styles/footers/footerContact.scss';
 
-function Footer() {
+function FooterContact() {
     return (
-        <div className = "Footer">
+        <div className = "FooterContact">
             <div id = "info">
                 <div id = "email">
                     <div id = "emailCircle">
@@ -69,4 +70,4 @@ function Footer() {
     )
 }
 
-export default Footer;
+export default FooterContact;

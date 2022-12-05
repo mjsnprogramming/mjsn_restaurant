@@ -15,7 +15,7 @@ import fries from '../images/fries.png';
 import { faApple } from '@fortawesome/free-brands-svg-icons';
 import orange from '../images/orange.png';
 import mainDish from '../images/mainDish.png';
-import Footer from './Footer.js';
+import FooterMain from './Footers/FooterMain.js';
 import googlePlayIcon from '../images/GooglePlay.png';
 import phoneApp from '../images/phoneApp.png';
 import '../styles/mobileMain.scss';
@@ -251,7 +251,7 @@ function Home() {
                     </div>
 
                 </div>
-                <Footer/>
+                <FooterMain/>
         </div>
     )
 }
