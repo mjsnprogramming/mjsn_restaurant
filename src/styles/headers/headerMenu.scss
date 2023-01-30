@@ -1,5 +1,7 @@
+$roboto: 'Roboto', sans-serif;
+$inter: 'Inter', sans-serif;
 @mixin spans() {
-    font-family: 'Inter', sans-serif;
+    font-family: $inter;
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
@@ -7,13 +9,10 @@
     user-select: none;
 }
 @mixin links() {
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
-}
-* {
-    box-sizing: border-box;
 }
 #mjsnFoodHeader {
     width: 100%;
@@ -100,6 +99,10 @@
         .links {
             margin-right: 40px;
             font-size: 17px;
+        }
+        #hrMenu {
+            width: 46px;
+            left: 233px;
         }
     }
 }

@@ -9,6 +9,11 @@ $inter: "Inter", sans-serif;
     position: absolute;
     top: 478px;
 }
+@mixin marginAuto {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
 #headerContactImg {
     background-image: url("../images/contact.png");
     background-size: cover;
@@ -198,9 +203,7 @@ $inter: "Inter", sans-serif;
 @media screen and (max-width: 1367px) {
     #categories {
         top: 200px !important;
-        position: relative !important;
-        display: block;
-        margin: 0 auto !important;
+        @include marginAuto;
         left: 0;
     }
     .articles {

@@ -11,6 +11,9 @@ $inter: 'Inter', sans-serif;
     top: 16px;
     left: 18px;
 }
+html {
+    scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
 }
@@ -381,6 +384,9 @@ $inter: 'Inter', sans-serif;
         color: #3C3C3C;
     }
 }
+.pageChooseCircles:focus {
+    background-color: #FCC647; 
+ }
 #leftArrow {
     left: 20px;
 }

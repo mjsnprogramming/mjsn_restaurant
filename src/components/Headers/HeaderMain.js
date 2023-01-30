@@ -8,47 +8,53 @@ function HeaderMain() {
     return (
         <div className = "HeaderMain">
             <div id = "mjsnFoodHeader">
+
                 <div id = "mjsnFood">
                     <span>MJSN</span>
                     <span>Food</span>
                 </div>
+
                 <div id = "headerLinks"> 
-                <hr id = "hrMain"></hr>
-            <ul>
-                <li><Link to = "/" className = "links" id = "homeLinkHome">Home</Link></li>
-                <li><Link to = "/AboutUs" className = "links" id = "aboutLink">About Us</Link></li>
-                <li><Link to = "/Menu" className = "links" id = "menuLink">Menu</Link></li>
-                <li><Link to = "/Blog" className = "links" id = "blogLink">Blog</Link></li>
-                <li><Link to = "/Contact" className = "links" id = "contactLink">Contact Us</Link></li>
-            </ul>
-            </div>
-            <div id = "nav" onClick = {navFunction}>
-                <div className = "navLinks" id = "navLink1"></div>
-                <div className = "navLinks" id = "navLink2"></div>
-                <div className = "navLinks" id = "navLink3"></div>
-            </div>
-            <div id = "navDropped" onClick = {navDroppedFunction}>
-                <div className = "navLinks" id = "navLink4"></div>
-                <div className = "navLinks" id = "navLink5"></div>
-                <div className = "navLinks" id = "navLink6"></div>
-            </div>
-            <div id = "navDrop">
-            <div id = "mjsnFoodDropped">
-                    <span>MJSN</span>
-                    <span>Food</span>
+                    <hr id = "hrMain"></hr>
+                        <ul>
+                            <li><Link to = "/" className = "links" id = "homeLinkHome">Home</Link></li>
+                            <li><Link to = "/AboutUs" className = "links" id = "aboutLink">About Us</Link></li>
+                            <li><Link to = "/Menu" className = "links" id = "menuLink">Menu</Link></li>
+                            <li><Link to = "/Blog" className = "links" id = "blogLink">Blog</Link></li>
+                            <li><Link to = "/Contact" className = "links" id = "contactLink">Contact Us</Link></li>
+                        </ul>
                 </div>
+
+                <div id = "nav" onClick = {navFunction}>
+                    <div className = "navLinks" id = "navLink1"></div>
+                    <div className = "navLinks" id = "navLink2"></div>
+                    <div className = "navLinks" id = "navLink3"></div>
+                </div>
+
+                <div id = "navDropped" onClick = {navDroppedFunction}>
+                    <div className = "navLinks" id = "navLink4"></div>
+                    <div className = "navLinks" id = "navLink5"></div>
+                    <div className = "navLinks" id = "navLink6"></div>
+                </div>
+
+                <div id = "navDrop">
+                    <div id = "mjsnFoodDropped">
+                        <span>MJSN</span>
+                        <span>Food</span>
+                    </div>
             
                 <div id = "headerLinksDropped"> 
-                <hr id = "hrMainDropped"></hr>
-            <ul>
-                <li><Link to = "/" className = "links" id = "homeLinkHome">Home</Link></li>
-                <li><Link to = "/AboutUs" className = "links" id = "aboutLink">About Us</Link></li>
-                <li><Link to = "/Menu" className = "links" id = "menuLink">Menu</Link></li>
-                <li><Link to = "/Blog" className = "links" id = "blogLink">Blog</Link></li>
-                <li><Link to = "/Contact" className = "links" id = "contactLink">Contact Us</Link></li>
-            </ul>
-            </div>
-            <div id = "socialMedia">
+                    <hr id = "hrMainDropped"></hr>
+                    <ul>
+                        <li><Link to = "/" className = "links" id = "homeLinkHome">Home</Link></li>
+                        <li><Link to = "/AboutUs" className = "links" id = "aboutLink">About Us</Link></li>
+                        <li><Link to = "/Menu" className = "links" id = "menuLink">Menu</Link></li>
+                        <li><Link to = "/Blog" className = "links" id = "blogLink">Blog</Link></li>
+                        <li><Link to = "/Contact" className = "links" id = "contactLink">Contact Us</Link></li>
+                    </ul>
+                </div>
+
+                <div id = "socialMedia">
                     <FontAwesomeIcon icon = {faFacebookF} id = "facebook" className = "socialMedia"/>
                     <hr id = "firstSocialMediaHR" className = "socialMediaHR"></hr>
                     <FontAwesomeIcon icon = {faInstagram} id = "instagram" className = "socialMedia"/>
@@ -56,9 +62,9 @@ function HeaderMain() {
                     <FontAwesomeIcon icon = {faTwitter} id = "twitter" className = "socialMedia"/>
                     <hr id = "thirdSocialMediaHR" className = "socialMediaHR"></hr>
                     <FontAwesomeIcon icon = {faYoutube} id = "youtube" className = "socialMedia"/>
-            </div>
+                </div>
 
-            </div>
+                </div>
             </div>
         </div>
     )

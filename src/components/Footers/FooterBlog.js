@@ -1,11 +1,11 @@
-import { faFacebookF, faInstagram, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faCopyright } from "@fortawesome/free-regular-svg-icons";
-import { faCircleChevronRight, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from 'react-router-dom';
 import '../../styles/Footer.scss';
 import '../../styles/footers/footerBlog.scss';
+import { faFacebookF, faInstagram, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faCopyright } from "@fortawesome/free-regular-svg-icons";
+import { faCircleChevronRight, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function FooterBlog() {
     return (
@@ -17,7 +17,9 @@ function FooterBlog() {
                     </div>
                     <span>info@youremail.com</span>
                 </div>
-                <hr></hr>
+
+                    <hr></hr>
+                
                 <div id = "mobile">
                     <div id = "mobileCircle">
                         <FontAwesomeIcon icon = {faPhone} id = "phone"/>
@@ -66,7 +68,7 @@ function FooterBlog() {
             Copyright 2022. MJSN Food. All Right Reserved.
             </span>
         </div>
-        </div>
+    </div>
     )
 }
 

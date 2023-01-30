@@ -1,5 +1,10 @@
 $segoe: "Segoe UI", sans-serif;
 $inter: "Inter", sans-serif;
+@mixin marginAuto {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
 #menuHeaderImg {
     background-image: url("../images/contact.png");
     background-size: cover;
@@ -22,10 +27,8 @@ $inter: "Inter", sans-serif;
     height: 89px;
     border: 1px solid #E5E5E5;
     border-radius: 10px;
-    position: relative;
+    @include marginAuto;
     top: 78px;
-    display: block;
-    margin: 0 auto;
     li {
         display: inline-block;
     }
@@ -42,6 +45,12 @@ $inter: "Inter", sans-serif;
         border: none;
         margin-left: 55px;
     }
+    #buttonAll {
+        background-color: #FEB918 !important;
+        color: white;
+        border: transparent;
+        border-radius: 8px;
+    }
     button:focus {
         background-color: #FEB918;
         border: transparent;
@@ -52,10 +61,8 @@ $inter: "Inter", sans-serif;
 #menuHeaderSpan {
     width: 465px;
     height: 105px;
-    position: relative;
+    @include marginAuto;
     top: 196px;
-    margin: 0 auto;
-    display: block;
     span {
         font-family: $segoe;
         font-weight: 700;
@@ -63,9 +70,7 @@ $inter: "Inter", sans-serif;
         line-height: 48px;
         color: #3C3C3C;
         text-align: center;
-        position: relative;
-        display: block;
-        margin: 0 auto;
+        @include marginAuto;
     }
     p {
         font-family: $inter;
@@ -73,18 +78,14 @@ $inter: "Inter", sans-serif;
         font-size: 14px;
         line-height: 27px;
         color: #667085;
-        position: relative;
-        display: block;
-        margin: 0 auto;
+        @include marginAuto;
         text-align: center;
     }
 }
 #menuItems {
     width: 1192px;
     height: 1047px;
-    position: relative;
-    display: block;
-    margin: 0 auto;
+    @include marginAuto;
     top: 282px;
     .menuItems {
         margin-left: 0;
@@ -94,7 +95,10 @@ $inter: "Inter", sans-serif;
     }
 }
 #pageChooseCirclesMenu {
+    @include marginAuto;
     top: 400px;
+    width: 700px;
+    height: 100px;
     #one {
         background-color: #FEB918;
         span {
@@ -106,6 +110,130 @@ $inter: "Inter", sans-serif;
         span {
             color: #FFFFFF !important;
         }
+    }
+    
+}
+.pageChooseCirclesMenu {
+    width: 70px;
+    height: 70px;
+    border-radius: 360px;
+    border: 1px solid rgba(112, 112, 112, 0.2);
+    display: inline-flex;
+    position: absolute;
+    top: 15px;
+    cursor: pointer;
+    span {
+        font-size: 36px;
+        font-family: $inter;
+        position: absolute;
+        left: 24px;
+        top: 14px;
+        color: #3C3C3C;
+    }
+}
+@media screen and (max-width: 1210px) {
+    #menuNavbar {
+        width: 320px;
+        height: 400px;
+        li {
+            display: block;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+        }
+    }
+    #menuItems {
+        width: 894px;
+        height: 1500px;
+    }
+}
+@media screen and (max-width: 915px) {
+    #menuItems {
+        width: 596px;
+        height: 2200px;
+    }
+    #pageChooseCirclesMenu {
+        width: 545px;
+    }
+    .pageChooseCircles {
+        width: 50px;
+        height: 50px;
+        top: 0;
+        span {
+            font-size: 28px;
+            top: 10px;
+            left: 17px;
+        }
+    }
+    #leftArrowIcon,
+    #rightArrowIcon {
+        font-size: 30px;
+        top: 17px;
+        left: 21px;
+    }
+    #leftArrow {
+        left: 0;
+    }
+    #one {
+        left: 80px;
+    }
+    #two {
+        left: 160px;
+    }
+    #three {
+        left: 240px;
+    }
+    #four {
+        left: 320px;
+    }
+    #five {
+        left: 400px;
+    }
+    #rightArrow {
+        left: 480px;
+    }
+}
+@media screen and (max-width: 620px) {
+    #menuItems {
+        width: 273px;
+        height: 4400px;
+    }
+    #pageChooseCirclesMenu {
+        width: 297px;
+    }
+    .pageChooseCirclesMenu {
+        width: 25px;
+        height: 25px;
+        span {
+            font-size: 16px;
+            top: 3.5px;
+            left: 7px;
+        }
+    }
+    #leftArrowIcon,
+    #rightArrowIcon {
+        font-size: 15px;
+        top: 4.4px;
+        left: 5px;
+    }
+    #one {
+        left: 45px;
+    }
+    #two {
+        left: 90px;
+    }
+    #three {
+        left: 135px;
+    }
+    #four {
+        left: 180px;
+    }
+    #five {
+        left: 225px;
+    }
+    #rightArrow {
+        left: 270px;
     }
     
 }

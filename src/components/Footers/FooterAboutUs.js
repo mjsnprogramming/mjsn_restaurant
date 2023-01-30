@@ -1,11 +1,11 @@
-import { faFacebookF, faInstagram, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faCopyright } from "@fortawesome/free-regular-svg-icons";
-import { faCircleChevronRight, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from 'react-router-dom';
 import '../../styles/Footer.scss';
 import '../../styles/footers/footerAboutUs.scss';
+import { faFacebookF, faInstagram, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faCopyright } from "@fortawesome/free-regular-svg-icons";
+import { faCircleChevronRight, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function FooterAboutUs() {
     return (
@@ -15,9 +15,11 @@ function FooterAboutUs() {
                     <div id = "emailCircle">
                         <FontAwesomeIcon icon = {faEnvelope} id = "envelope"/>
                     </div>
-                    <span>info@youremail.com</span>
+                        <span>info@youremail.com</span>
                 </div>
+                
                 <hr></hr>
+
                 <div id = "mobile">
                     <div id = "mobileCircle">
                         <FontAwesomeIcon icon = {faPhone} id = "phone"/>
@@ -41,7 +43,7 @@ function FooterAboutUs() {
                     <FontAwesomeIcon icon = {faTwitter} id = "twitter" className = "socialMedia"/>
                     <hr id = "thirdSocialMediaHR" className = "socialMediaHR"></hr>
                     <FontAwesomeIcon icon = {faYoutube} id = "youtube" className = "socialMedia"/>
-            </div>
+                </div>
             <div id = "quickLink">
                 <span>QUICK LINK</span>
                 <ul>
@@ -66,7 +68,7 @@ function FooterAboutUs() {
             Copyright 2022. MJSN Food. All Right Reserved.
             </span>
         </div>
-        </div>
+    </div>
     )
 }
 

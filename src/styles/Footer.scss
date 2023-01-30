@@ -1,4 +1,5 @@
 $inter: "Inter", sans-serif;
+$segoe: "Segoe UI", sans-serif;
 @mixin footerCircles() {
         width: 100px;
         height: 101.49px;
@@ -29,6 +30,244 @@ $inter: "Inter", sans-serif;
     width: 100%;
     height: 662px;
     position: relative;
+}
+
+@mixin marginAuto {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+#info {
+    width: 1170px;
+    height: 233.43px;
+    border: transparent;
+    border-radius: 30px;
+    filter: drop-shadow(0px 10px 100px rgba(0, 0, 0, 0.24));
+    background-color: white;
+    @include marginAuto;
+    top: 0;
+    z-index: 2;
+    hr {
+        width: 0;
+        height: 118.75px;
+        border: 2px solid #E6E6E6;
+        position: absolute;
+        left: 589px;
+        top: 57.85px;
+    }
+}
+#email {
+    width: 397px;
+    height: 101.49px;
+    position: absolute;
+    left: 98px;
+    top: 0;
+    #emailCircle {
+        @include footerCircles;
+        #envelope {
+            @include footerCirclesIcons;
+        }
+    }
+    span {
+        @include footerInfoSpan;
+        left: 118px;
+    }
+}
+#mobile {
+    width: 388px;
+    height: 101.49px;
+    position: absolute;
+    left: 683px;
+    top: 65.97px;
+    #mobileCircle {
+        @include footerCircles;
+        left: 0;
+        top: 0;
+        #phone {
+            @include footerCirclesIcons;
+        }
+    }
+    span {
+        @include footerInfoSpan;
+        top: 33px;
+        left: 118px;
+    }
+}
+#footerMainSection {
+    width: 100%;
+    height: 532px;
+    position: absolute;
+    top: 130px;
+    background-color: #232233;
+    z-index: 1;
+    #mjsnFood {
+        width: 199px;
+        height: 30px;
+        position: absolute;
+        top: 246.54px;
+        left: 9%;
+    }
+    p {
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        color: white;
+        position: absolute;
+        top: 288.15px;
+        left: 9%;
+    }
+}
+#socialMedia {
+    width: 276px;
+    height: 24.36px;
+    position: absolute;
+    top: 412px;
+    left: 9%;
+    .socialMedia {
+        font-size: 24px;
+        position: absolute;
+        top: 0;
+        color: white;
+        cursor: pointer;
+    }
+    .socialMediaHR {
+        width: 0;
+        height: 20.3px;
+        border: 1px solid #FFFFFF;
+        position: absolute;
+        top: -6px;
+    }
+    #facebook {
+        left: 0;
+        color: #FCC647;
+    }
+    #firstSocialMediaHR {
+        left: 54px;
+    }
+    #instagram {
+        left: 88px;
+    }
+    #secondSocialMediaHR {
+        left: 138px;
+    }
+    #twitter {
+        left: 170px;
+    }
+    #thirdSocialMediaHR {
+        left: 222px;
+    }
+    #youtube {
+        left: 252px;
+    }
+}
+#quickLink {
+    width: 141px;
+    height: 158px;
+    position: absolute;
+    top: 238.42px;
+    left: 45%;
+    span {
+        font-family: $segoe;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 38px;
+        color: #FFFFFF;
+    }
+    .footerLinks {
+        list-style-type: none;
+        font-family: $segoe;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 38px;
+        color: #FFFFFF;
+        margin-left: -40px;
+        
+    }
+    :link {
+        text-decoration: none;
+    }
+    
+}
+#newsletter {
+    width: 369px;
+    height: 190px;
+    position: absolute;
+    top: 235px;
+    left: 70%;
+    span {
+        font-family: $segoe;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 38px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    p {
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 0;
+        top: 49px;
+    }
+    #newsletterInput {
+        width: 369px;
+        height: 50px;
+        background-color: #FFFFFF;
+        border: transparent;
+        border-radius: 4px;
+        position: absolute;
+        top: 130px;
+        left: 0;
+        outline: none;
+        text-indent: 20px;
+        ::placeholder {
+            font-family: $inter;
+            font-family: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #6C6C72;
+        }
+    }
+    #newsletterSubmit {
+        width: 52px;
+        height: 50px;
+        background-color: #FEB918;
+        border: transparent;
+        border-radius: 4px;
+        position: absolute;
+        top: 130px;
+        left: 317px;
+        cursor: pointer;
+        #submitIcon {
+            font-size: 24px;
+            color: #FFFFFF;
+        }
+    }
+}
+#bottomHR {
+    width: 80%;
+    height: 0;
+    position: absolute;
+    left: 139px;
+    top: 482px;
+    border: 1px solid #FFFFFF;
+}
+#copyright {
+    font-family: $inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 505px;
 }
 @media only screen and (max-width: 1429px) {
     #mjsnFood {
@@ -176,10 +415,13 @@ $inter: "Inter", sans-serif;
         left: 35px !important;
         width: 300px !important;
         top: 40px !important;
-        background-color: #FCC647 !important;
         #emailCircle {
-            position: absolute !important;
-            left: 70px !important;
+            margin-left: 50px !important;
+            margin-top: -70px;
+        }
+        span {
+            margin-left: 50px;
+            margin-top: -68px;
         }
     }
     #mobile {
@@ -252,238 +494,4 @@ $inter: "Inter", sans-serif;
             margin: 0 auto;
         }
     }
-}
-#info {
-    width: 1170px;
-    height: 233.43px;
-    border: transparent;
-    border-radius: 30px;
-    filter: drop-shadow(0px 10px 100px rgba(0, 0, 0, 0.24));
-    background-color: white;
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    top: 0;
-    z-index: 2;
-    hr {
-        width: 0;
-        height: 118.75px;
-        border: 2px solid #E6E6E6;
-        position: absolute;
-        left: 589px;
-        top: 57.85px;
-    }
-}
-#email {
-    width: 397px;
-    height: 101.49px;
-    position: absolute;
-    left: 98px;
-    top: 0;
-    #emailCircle {
-        @include footerCircles;
-        #envelope {
-            @include footerCirclesIcons;
-        }
-    }
-    span {
-        @include footerInfoSpan;
-        left: 118px;
-    }
-}
-#mobile {
-    width: 388px;
-    height: 101.49px;
-    position: absolute;
-    left: 683px;
-    top: 65.97px;
-    #mobileCircle {
-        @include footerCircles;
-        left: 0;
-        top: 0;
-        #phone {
-            @include footerCirclesIcons;
-        }
-    }
-    span {
-        @include footerInfoSpan;
-        top: 33px;
-        left: 118px;
-    }
-}
-#footerMainSection {
-    width: 100%;
-    height: 532px;
-    position: absolute;
-    top: 130px;
-    background-color: #232233;
-    z-index: 1;
-    #mjsnFood {
-        width: 199px;
-        height: 30px;
-        position: absolute;
-        top: 246.54px;
-        left: 9%;
-    }
-    p {
-        font-family: $inter;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 25px;
-        color: white;
-        position: absolute;
-        top: 288.15px;
-        left: 9%;
-    }
-}
-#socialMedia {
-    width: 276px;
-    height: 24.36px;
-    position: absolute;
-    top: 412px;
-    left: 9%;
-    .socialMedia {
-        font-size: 24px;
-        position: absolute;
-        top: 0;
-        color: white;
-        cursor: pointer;
-    }
-    .socialMediaHR {
-        width: 0;
-        height: 20.3px;
-        border: 1px solid #FFFFFF;
-        position: absolute;
-        top: -6px;
-    }
-    #facebook {
-        left: 0;
-        color: #FCC647;
-    }
-    #firstSocialMediaHR {
-        left: 54px;
-    }
-    #instagram {
-        left: 88px;
-    }
-    #secondSocialMediaHR {
-        left: 138px;
-    }
-    #twitter {
-        left: 170px;
-    }
-    #thirdSocialMediaHR {
-        left: 222px;
-    }
-    #youtube {
-        left: 252px;
-    }
-}
-#quickLink {
-    width: 141px;
-    height: 158px;
-    position: absolute;
-    top: 238.42px;
-    left: 45%;
-    span {
-        font-family: "Segoe UI", sans-serif;
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 38px;
-        color: #FFFFFF;
-    }
-    .footerLinks {
-        list-style-type: none;
-        font-family: "Segoe UI", sans-serif;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 38px;
-        color: #FFFFFF;
-        margin-left: -40px;
-        
-    }
-    :link {
-        text-decoration: none;
-    }
-    
-}
-#newsletter {
-    width: 369px;
-    height: 190px;
-    position: absolute;
-    top: 235px;
-    left: 70%;
-    span {
-        font-family: "Segoe UI", sans-serif;
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 38px;
-        color: #FFFFFF;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-    p {
-        font-family: $inter;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        color: #FFFFFF;
-        position: absolute;
-        left: 0;
-        top: 49px;
-    }
-    #newsletterInput {
-        width: 369px;
-        height: 50px;
-        background-color: #FFFFFF;
-        border: transparent;
-        border-radius: 4px;
-        position: absolute;
-        top: 130px;
-        left: 0;
-        outline: none;
-        text-indent: 20px;
-        ::placeholder {
-            font-family: $inter;
-            font-family: 400;
-            font-size: 16px;
-            line-height: 24px;
-            color: #6C6C72;
-        }
-    }
-    #newsletterSubmit {
-        width: 52px;
-        height: 50px;
-        background-color: #FEB918;
-        border: transparent;
-        border-radius: 4px;
-        position: absolute;
-        top: 130px;
-        left: 317px;
-        cursor: pointer;
-        #submitIcon {
-            font-size: 24px;
-            color: #FFFFFF;
-        }
-    }
-}
-#bottomHR {
-    width: 80%;
-    height: 0;
-    position: absolute;
-    left: 139px;
-    top: 482px;
-    border: 1px solid #FFFFFF;
-}
-#copyright {
-    font-family: $inter;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    top: 505px;
 }

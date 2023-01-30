@@ -1,9 +1,10 @@
 .FooterContact {
     position: relative;
-    top: 1200px !important;
+    top: 1200px;
 }
 @media screen and (max-width: 1500px) {
-    .Footer {
-        top: 800px;
+    .FooterContact {
+        position: relative;
+        top: 2000px !important;
     }
 }

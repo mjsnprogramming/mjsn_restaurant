@@ -13,6 +13,11 @@ $inter: "Inter", sans-serif;
         font-size: 20px;
         color: #FFFFFF;
 }
+@mixin marginAuto {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+}
 #aboutUsHeaderImg {
     background-image: url("../images/contact.png");
     background-size: cover;
@@ -109,14 +114,12 @@ $inter: "Inter", sans-serif;
         border: transparent;
         border-radius: 360px;
         background-color: #FEB918;
-        display: block;
-        position: relative;
-        margin: 0 auto;
         top: 10px;
         text-align: center;
         padding-top: 8px;
         font-size: 17px;
         color: #FFFFFF;
+        @include marginAuto;
     }
     .advantages {
         top: 20px;
@@ -221,18 +224,14 @@ $inter: "Inter", sans-serif;
 #kitchenExpertsParagraph {
     width: 500px;
     height: 150px;
-    display: block;
-    margin: 0 auto;
-    position: relative;
+    @include marginAuto;
     top: 800px;
     span {
         font-family: $segoe;
         font-weight: 700;
         font-size: 40px;
         color: #3C3C3C;
-        display: block;
-        position: relative;
-        margin: 0 auto;
+        @include marginAuto;
         text-align: center;
     }
     p {
@@ -246,9 +245,7 @@ $inter: "Inter", sans-serif;
 #kitchenExperts {
     width: 1800px;
     height: 600px;
-    position: relative;
-    display: block;
-    margin: 0 auto;
+    @include marginAuto;
     top: 900px;
 }
 .kitchenExperts {
@@ -265,9 +262,7 @@ $inter: "Inter", sans-serif;
         height: 400px;
     }
     span:nth-child(2) {
-        position: relative;
-        display: block;
-        margin: 0 auto;
+        @include marginAuto;
         text-align: center;
         font-family: $segoe;
         font-weight: 700;
@@ -275,9 +270,7 @@ $inter: "Inter", sans-serif;
         color: #3C3C3C;
     }
     span:nth-child(3) {
-        position: relative;
-        display: block;
-        margin: 0 auto;
+        @include marginAuto;
         text-align: center;
         font-family: $inter;
         font-weight: 400;
@@ -288,9 +281,7 @@ $inter: "Inter", sans-serif;
     #socialMediaChefs {
         width: 250px;
         height: 70px;
-        position: relative;
-        display: block;
-        margin: 0 auto;
+        @include marginAuto;
         top: 60px;
 
         .fb {
@@ -378,16 +369,12 @@ $inter: "Inter", sans-serif;
 @media screen and (max-width: 1500px) {
     
     #ceoAndAdvantages {
-        position: relative;
-        display: block;
-        margin: 0 auto;
+        @include marginAuto;
         left: 0 !important;
         top: 800px;
     }
     #whyTheBest {
-        position: relative !important;
-        display: block;
-        margin: 0 auto;
+        @include marginAuto;
         left: 0;
         top: -350px;
     }
@@ -423,14 +410,10 @@ $inter: "Inter", sans-serif;
         height: 700px;
         width: 100%;
         #ceo {
-            position: relative;
-            display: block;
-            margin: 0 auto;
+            @include marginAuto;
         }
         #advantages {
-            position: relative;
-            display: block;
-            margin: 0 auto;
+            @include marginAuto;
             left: 0;
             top: 50px;
             -webkit-box-shadow: 0px 0px 24px 1px rgba(66, 68, 90, 1) !important;
