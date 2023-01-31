@@ -210,7 +210,7 @@ function Home() {
                         </div>    
                     </div>
 
-                    <div id = "pageChooseCircles">
+                    {/*<div id = "pageChooseCircles">
                         <div id = "leftArrow" className = "pageChooseCircles">
                             <FontAwesomeIcon icon = {faArrowLeft} id = "leftArrowIcon"/>
                         </div>
@@ -238,7 +238,7 @@ function Home() {
                         <div id = "rightArrow" className = "pageChooseCircles">
                             <FontAwesomeIcon icon = {faArrowRight} id = "rightArrowIcon"/>
                         </div>
-                    </div>
+                    </div>*/}
 
                     <div id = "downloadTheApp">
                         <p>To Get 15% Discount<br></br>

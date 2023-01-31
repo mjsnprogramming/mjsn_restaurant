@@ -205,7 +205,7 @@ function Menu() {
                     </div>
                 </div>
 
-                <div id = "pageChooseCirclesMenu">
+                {/*<div id = "pageChooseCirclesMenu">
 
                     <div id = "leftArrow" className = "pageChooseCirclesMenu">
                         <FontAwesomeIcon icon = {faArrowLeft} id = "leftArrowIcon"/>
@@ -234,7 +234,7 @@ function Menu() {
                     <div id = "rightArrow" className = "pageChooseCirclesMenu">
                         <FontAwesomeIcon icon = {faArrowRight} id = "rightArrowIcon"/>
                     </div>
-                </div>
+    </div>*/}
             <FooterMenu/>
         </div>
     )

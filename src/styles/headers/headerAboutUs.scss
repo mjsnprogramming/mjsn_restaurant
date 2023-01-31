@@ -93,7 +93,18 @@ $inter: 'Inter', sans-serif;
         top: 25px;
     }
 }
-
+#navDrop {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFBF3;
+    z-index: 2;
+    display: none;
+    position: absolute;
+    top: 80px;
+}
+@keyframes headerDropdown {
+    
+}
 @media screen and (max-width: 1367px) {
     #headerLinks {
         left: 35%;

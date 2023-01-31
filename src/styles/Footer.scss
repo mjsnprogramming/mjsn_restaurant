@@ -31,6 +31,9 @@ $segoe: "Segoe UI", sans-serif;
     height: 662px;
     position: relative;
 }
+body {
+    overflow-x: hidden;
+}
 
 @mixin marginAuto {
     display: block;
@@ -385,7 +388,6 @@ $segoe: "Segoe UI", sans-serif;
         p:nth-child(2) {
             top: 50px !important;
         }
-
     }
     #bottomHR {
         position: relative !important;
@@ -396,7 +398,6 @@ $segoe: "Segoe UI", sans-serif;
     #copyright {
         top: 830px !important;
     }
-
 }
 @media only screen and (max-width: 723px) {
 
@@ -462,8 +463,6 @@ $segoe: "Segoe UI", sans-serif;
         top: 1050px !important;
         text-align: center;
     }
-    
-    
 }
 @media only screen and (max-width: 360px) {
     #info {
@@ -475,10 +474,10 @@ $segoe: "Segoe UI", sans-serif;
         }
     }
     #email {
-        left: 70px !important;
+        left: 25px !important;
     }
     #mobile {
-        left: 290px !important;
+        left: 25px !important;
     }
     #footerMainSection {
         #mjsnFood,
@@ -487,11 +486,16 @@ $segoe: "Segoe UI", sans-serif;
             left: 20px !important;
         }
         #socialMedia {
-            
             left: 0 !important;
             position: relative;
             display: block;
             margin: 0 auto;
         }
+    }
+    #newsletterInput {
+        margin-top: 30px;
+    }
+    #newsletterSubmit {
+        margin-top: 30px;
     }
 }
